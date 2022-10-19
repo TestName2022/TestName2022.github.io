@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tag__ul ol</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+<h2>тег ul</h2>
+
+    <div class="row comment">
+      <p><i><</i> ul <i>></i> по умолчанию - <br> без атрибутов</p>
+      <p><i><</i>ul type="circle" <i>></i></p>
+      <p><i><</i>ul type="square"<i>></i></p>
+    </div>
+
+    <div class="row">
+      <ul>
+        <li>Челси</li>
+        <li>Арсенал</li>
+        <li>МС</li>
+        <li>Ливер</li>
+        <li>Привет</li>
+      </ul>
+
+      <ul type="circle">
+        <li>Челси</li>
+        <li>Арсенал</li>
+        <li>МС</li>
+        <li>Ливер</li>
+        <li>Привет</li>
+      </ul>
+
+      <ul type="square">
+        <li>Челси</li>
+        <li>Арсенал</li>
+        <li>МС</li>
+        <li>Ливер</li>
+        <li>Привет</li>
+      </ul>
+    </div>
+
+    <div class="row comment">
+        <p><i><</i> /ul <i>></i></p>
+        <p><i><</i> /ul <i>></i></p>
+        <p><i><</i> /ul <i>></i></p>
+      </div>
+
+<hr color="black">
+<h2>тег ol</h2>
+    <div class="row comment">
+        <p><i><</i>ol<i>></i> по умолчанию<br> без атрибутов</p>
+        <p><i><</i>ol type="A" <i>></i></p>
+        <p><i><</i>ol type="a" <i>></i></p>
+        <p><i><</i>ol type="I" <i>></i></p>
+        <p><i><</i>ol type="i" <i>></i></p>
+      </div>
+      <div class="row">
+    <ol>
+      <li>Челси</li>
+      <li>Арсенал</li>
+      <li>МС</li>
+      <li>Ливер</li>
+      <li>Привет</li>
+    </ol>
+    <br />
+    
+    <ol type="A">
+      <li>Челси</li>
+      <li>Арсенал</li>
+      <li>МС</li>
+      <li>Ливер</li>
+      <li>Привет</li>
+    </ol>
+    <br />
+    
+    <ol type="a">
+      <li>Челси</li>
+      <li>Арсенал</li>
+      <li>МС</li>
+      <li>Ливер</li>
+      <li>Привет</li>
+    </ol>
+    <ol type="A">
+        <li>Челси</li>
+        <li>Арсенал</li>
+        <li>МС</li>
+        <li>Ливер</li>
+        <li>Привет</li>
+      </ol>
+      <br />
+      
+      <ol type="i">
+        <li>Челси</li>
+        <li>Арсенал</li>
+        <li>МС</li>
+        <li>Ливер</li>
+        <li>Привет</li>
+      </ol>
+    </div>
+    <div class="row comment">
+        <p><i><</i> /ol <i>></i></p>
+        <p><i><</i> /ol <i>></i></p>
+        <p><i><</i> /ol <i>></i></p>
+        <p><i><</i> /ol <i>></i></p>
+        <p><i><</i> /ol <i>></i></p>
+      </div>
+      <hr color="grey">
+   <div class="comment row">
+    <p><i><</i> ol start="5" <i>></i></p>
+    <p><i><</i> <i>li</i>  value="32"> МС <i><</i><i>/li></i> <br>
+    атрибут даем li</p>
+   
+   </div>
+      <div class="row">
+    
+    <ol start="5">
+      <li>Челси</li>
+      <li>Арсенал</li>
+      <li>МС</li>
+      <li>Ливер</li>
+      <li>Привет</li>
+    </ol>
+
+    
+   
+    <ol>
+      <li>Челси</li>
+      <li>Арсенал</li>
+      <li value="32">МС</li>
+      <li>Ливер</li>
+      <li>Привет</li>
+    </ol>
+    </div>
+    <div class="row comment">
+        <p><i><</i> /ol <i>></i></p>
+        <p><i><</i> /ol <i>></i></p>
+      </div>
+      <hr color="black">
+      <h2>Пример вложености</h2>
+    <div class="row">
+    <pre>
+ <i><</i>ul<i>></i>
+    <i><</i>li<i>></i>Главная<i><</i>/li<i>></i>
+    <i><</i>li<i>></i>
+          Услуги
+         <i><</i>ul<i>></i> 
+            <i><</i>li<i>></i>Создание сайтов<i><</i>/li<i>></i>
+            <i><</i>li<i>></i>Раскрутка сайтов<i><</i>/li<i>></i>
+         <i><</i>/ul<i>></i>
+    <i><</i>/li<i>></i>
+    <i><</i>li<i>></i>Контакты<i><</i>/li<i>></i>
+<i><</i>/ul<i>></i>  
+</pre
+    >
+    <ul>
+      <li>Главная</li>
+      <li>
+        Услуги
+        <ul>
+          <li>Создание сайтов</li>
+          <li>Раскрутка сайтов</li>
+        </ul>
+      </li>
+      <li>Контакты</li>
+    </ul>
+</div>
+  </body>
+</html>

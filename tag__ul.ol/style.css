@@ -1,0 +1,13 @@
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+p{
+    font-size: 20px;
+}
+h2{
+    text-align: center;
+    color: red;
+    font-size: 25px;
+}

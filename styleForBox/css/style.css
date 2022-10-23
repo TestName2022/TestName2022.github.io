@@ -1,0 +1,240 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*--------------------*/
+
+h2 {
+  color: blue;
+  font-size: 20px;
+  font-weight: 700;
+}
+h3 {
+  color: rgba(174, 0, 255, 0.863);
+  font-size: 17px;
+  font-weight: 700;
+}
+body{
+  padding: 15px;
+}
+.box{
+  padding: 20px;
+  box-shadow: 0px 0px 15px 5px black;
+  border-radius: 20px;
+}
+/*--------------------*/
+.blockExemple {
+  border: 1px solid #000;
+  /*для демонстрации, мы добавили границу блока, чтобы понимать как всё работает*/
+}
+/*--------------------*/
+/*Пример 1*/
+.blockExemplePadding {
+  padding: 10px 20px 30px 5px;
+  border: 1px solid #000; /*для демонстрации*/
+}
+.stringExempePadding {
+}
+/*--------------------*/
+/*Пример 2*/
+.blockExempleMargin {
+  margin: 50px 20px 30px 15px;
+  border: 1px solid #000; /*для демонстрации*/
+}
+.stringExempePadding {
+}
+/*--------------------*/
+/*Пример 3*/
+.blockExempleWidth {
+  width: 700px;
+  border: 1px solid #000; /*для демонстрации*/
+}
+.stringExempeWidth {
+}
+.imgExempleWidth {
+  width: 100px;
+}
+
+/*--------------------*/
+/*Пример 4*/
+.blockExemple_max-width {
+  max-width: 700px;
+  border: 1px solid #000; /*для демонстрации*/
+}
+.stringExempe_max-width {
+}
+/*--------------------*/
+/*Пример 5*/
+.blockExemple_min-width {
+  min-width: 900px;
+  border: 1px solid #000; /*для демонстрации*/
+}
+.stringExempe_min-width {
+}
+/*--------------------*/
+/*Пример 6*/
+.blockExempleHeight {
+  height: 200px;
+  border: 1px solid #000; /*для демонстрации*/
+}
+.stringExempeHeight {
+}
+/*--------------------*/
+/*Пример 7*/
+.blockExemple_max-height {
+  max-height: 200px;
+  border: 1px solid #000; /*для демонстрации*/
+}
+.miniText_max-height {
+  max-height: 200px;
+  border: 1px solid #000; /*для демонстрации*/
+}
+.stringExempe_max-height {
+}
+/*--------------------*/
+/*Пример 8*/
+.blockExemple_min-height {
+  min-height: 200px;
+  border: 1px solid #000; /*для демонстрации*/
+}
+.maxText_min-height {
+  min-height: 200px;
+  border: 1px solid #000; /*для демонстрации*/
+}
+.stringExempe_min-height {
+}
+
+/*--------------------*/
+/*Пример 9*/
+.blockExemple_Overflow-visible {
+  overflow: visible;
+  max-height: 50px;
+  border: 1px solid #000; /*для демонстрации*/
+}
+/*--------------------*/
+.blockExemple_Overflow-hidden {
+  overflow: hidden;
+  max-height: 50px;
+  border: 1px solid #000; /*для демонстрации*/
+}
+/*--------------------*/
+.blockExemple_Overflow-scroll {
+  overflow: scroll;
+  max-height: 50px;
+  border: 1px solid #000; /*для демонстрации*/
+}
+/*--------------------*/
+.blockExemple_Overflow-auto {
+  overflow: auto;
+  max-height: 50px;
+  border: 1px solid #000; /*для демонстрации*/
+}
+/*--------------------*/
+/*Пример 10*/
+.blockExemple_displayBlock {
+}
+.stringExempe_displayBlock {
+  display: block;
+  padding: 50px;
+  border: 1px solid #000; /*для демонстрации*/
+}
+/*--------------------*/
+.blockExemple_displayInline{
+  display: inline;
+}
+.stringExempe_displayInline{
+
+}
+/*--------------------*/
+.blockExemple_displayInline-block{
+  display: inline-block;
+  padding: 50px;
+  border: 1px solid #000; /*для демонстрации*/
+}
+.stringExempe_displayInline-block{
+  display: inline-block;
+  padding: 50px;
+  border: 1px solid #000; /*для демонстрации*/
+}
+/*--------------------*/
+.blockExemple_displayNone{
+display: none;
+}
+.stringExempe_displayNone{
+  display: none;
+}

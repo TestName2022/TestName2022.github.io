@@ -1,0 +1,209 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+h2 {
+  color: blue;
+  font-weight: 700;
+  font-size: 20px;
+}
+h3 {
+  color: rgb(255, 0, 0);
+  font-weight: 400;
+  font-size: 18px;
+}
+body{
+  padding: 20px;
+}
+div{
+  padding: 20px 0px 20px 20px ;
+  box-shadow: 0px 0px 17px 5px black;
+  border-radius: 20px;
+  
+}
+
+/*Пример 1 font-family.*/
+.arial {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/*Пример 2*/
+.fontsize30 {
+  font-size: 30px;
+}
+.fontsize20 {
+  font-size: 20px;
+}
+
+/*Пример 3*/
+.fontStyle {
+  font-style: italic;
+}
+.fontStyle2 {
+  font-style: normal;
+}
+.fontStyle3 {
+  font-style: oblique;
+}
+
+/*Пример 4*/
+.fontWeight {
+  font-weight: 700;
+}
+.fontWeight2 {
+  font-weight: 900;
+}
+/*Пример 5*/
+.colorRed {
+  color: #f00f00;
+}
+
+/*Пример 6*/
+.textAlignRight {
+  text-align: right;
+}
+.textAlignleft {
+  text-align: left;
+}
+.textAlignJustify {
+  text-align: justify;
+}
+.textAlignCenter {
+  text-align: center;
+}
+
+/*Пример 7*/
+.textDecoration {
+  text-decoration: underline;
+}
+.textDecoration2 {
+  text-decoration: line-through;
+}
+.textDecoration3 {
+  text-decoration: overline;
+}
+
+/*Пример 8*/
+.shadowText {
+  text-shadow: 1px 1px 1px #000000;
+}
+.shadowText2 {
+  text-shadow: 1px 1px 10px #000000;
+}
+
+/*Пример 9*/
+.textTransform {
+  text-transform: capitalize;
+}
+.textTransform2 {
+  text-transform: lowercase;
+}
+.textTransform3 {
+  text-transform: uppercase;
+}
+/*Пример 10*/
+.ident {
+  text-indent: 50px;
+}
+/*Пример 11*/
+.letterSpacing {
+  letter-spacing: 5px;
+}
+.letterSpacing2 {
+  letter-spacing: 15px;
+}
+/*Пример 12*/
+.wordSpacing {
+  word-spacing: 5px;
+}
+.wordSpacing2 {
+  word-spacing: 15px;
+}
+/*Пример 13*/
+.whiteSpace {
+  /*значение nowrap - нет переноса текста*/
+  white-space: nowrap;
+}
+/*Пример 14*/
+.lineHeight {
+  line-height: 20px;
+}
+.lineHeight2 {
+  line-height: 30px;
+}

@@ -9,3 +9,5 @@
 [id](https://TestName2022.github.io/id/ "id-Якоря") -  якоря
 
 # CSS
+
+[styleForText](https://TestName2022.github.io/styleForText/ "styleForText") - font-family, font-size, font-style, font-weight, color, text-align, text-decoration, text-shadow, text-transform, text-ident, letter-spacing, white-space, line-height,

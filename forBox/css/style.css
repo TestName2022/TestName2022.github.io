@@ -1,0 +1,261 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*--------------------*/
+body{
+  padding: 10px;
+}
+.box{
+  padding: 20px;
+  box-shadow: 0px 0px 15px 5px black;
+  border-radius: 20px;
+}
+.originalBlock {
+  margin: 0px 0px 20px 0px;
+}
+
+.originalSting {
+}
+
+.original_p {
+  margin: 22px 0px 0px 0px;
+}
+
+h2 {
+  color: brown;
+  font-size: 20px;
+  font-family: cursive;
+  margin: 0px 0px 10px 0px;
+}
+h3 {
+  color: blueviolet;
+  font-size: 18px;
+  margin: 0px 0px 8px 0px;
+}
+/*--------------------*/
+
+/*Пример 1*/
+
+.exemplelBlock_border_solid {
+  margin: 0px 0px 20px 0px;
+  border: 1px solid #000;
+}
+
+.exemplelBlock_border_dotted {
+  border: 5px dotted rgb(255, 0, 0);
+  margin: 0px 0px 20px 0px;
+}
+
+.exemplelBlock_border_dashed {
+  border: 3px dashed blue;
+  margin: 0px 0px 20px 0px;
+}
+
+.exemplelIMG_border {
+  border: 20px solid #000;
+  margin: 0px 0px 20px 0px;
+}
+/*--------------------*/
+
+/*Пример 2*/
+
+.exempleBlock_borderTop {
+  border-top: 5px solid #000;
+  margin: 0px 0px 20px 0px;
+}
+
+.exempleBlock_borderBottom {
+  border-bottom: 5px dashed #000;
+  margin: 0px 0px 20px 0px;
+}
+
+.exempleBlock_borderLeft {
+  border-left: 10px dotted red;
+  margin: 0px 0px 20px 0px;
+}
+
+.exempleBlock_borderRight {
+  border-right: 5px dashed blue;
+  margin: 0px 0px 20px 0px;
+}
+
+.exempleIMG_borderRight_none {
+  border: 5px dashed #000;
+  border-right: none;
+}
+/*--------------------*/
+
+/*Пример 3*/
+
+.exempleBlock_borderRadius {
+  border: 5px solid #000;
+  border-radius: 20px 20px 20px 20px;
+  margin: 0px 0px 20px 0px;
+}
+
+.exempleBlock_borderRadius2 {
+  border: 5px solid #000;
+  border-radius: 20px 0px 50px 0px;
+  margin: 0px 0px 20px 0px;
+}
+
+.exemplelIMG_borderRadius {
+  border-radius: 50%;
+}
+/*--------------------*/
+
+/*Пример 4*/
+
+.exempleBlock_outline {
+  outline: 5px solid red;
+  margin-bottom: 50px;
+}
+
+.exempleBlock_outline2 {
+  border: 5px solid black;
+  outline: 5px solid red;
+  margin-bottom: 50px;
+}
+
+.exempleIMG_outline {
+  outline: 5px solid red;
+}
+
+.exempleSting_outline{
+  outline: 5px solid red;
+}
+
+
+
+/*--------------------*/
+
+/*Пример 5*/
+.exempleBlock_boxShadow {
+  margin-top: 20px;
+
+  box-shadow: 5px 5px 10px 5px black;
+
+  margin-bottom: 50px;
+}
+
+.exempleBlock_boxShadow2 {
+  margin: 10px;
+  box-shadow: 5px 5px 10px 5px black;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.exempleBlock_boxShadow3 {
+  margin: 10px;
+  box-shadow: 5px 5px 10px 5px black;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.exempleBlock_boxShadow_inset {
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 5px black, inset 5px 5px 10px 5px black;
+  margin-bottom: 50px;
+}
+
+/*--------------------*/
+
+/*Пример 6*/
+.exempleBlock_opacity{
+opacity: 0.2;
+}
+
+.exempleString_opacity{
+  opacity: 0;
+  
+}
+
+.linkFapl{
+  opacity: 0;
+  margin-bottom: 20px;
+}
+/*--------------------*/
+
+/*Пример 7*/
+.exempleBlock_visibility{
+  visibility: hidden;
+}

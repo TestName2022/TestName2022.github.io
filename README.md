@@ -10,18 +10,8 @@
 
 # CSS
 
-[styleForText](https://TestName2022.github.io/styleForText/ "styleForText")
-font-family - (Устанавливается семейство шрифта. Типы шрифтов)
-font-size - (Размер шрифта)
-font-style - (Определяет начертание шрифта) 
-font-weight - (Устанавливает насыщенность шрифта)
-color - (Определяет цвет текста)
-text-align - (Определяет горизонтальное выравнивание текста) 
-text-decoration - (Добавлет оформление текста. Подчеркивать текст) 
-text-shadow - (Добавлет тень к тексту)
-text-transform - (Управляет заглавными или прописными символами) 
-text-ident - (Отступ абзаца)
-letter-spacing - (Интервал между символами) 
-word-spacing - (Интервал между словами)
-white-space - (Управляет свойствами пробелов между словами) 
-line-height - (Устанавливает межстрочный интервал текста)
+[styleForText](https://TestName2022.github.io/styleForText/ "styleForText") - Стили для текста и шрифта
+
+[styleForBox](https://TestName2022.github.io/styleForBox/ "styleForBox") - Свойство блоков  (overflow)
+
+[forBox](https://TestName2022.github.io/forBox/ "forBox") - Свойство и стили блоков (outline (внешняя граница блока), box-shadow + inset (тень внутри блока) opacity (уровень прозрачности), visibility)

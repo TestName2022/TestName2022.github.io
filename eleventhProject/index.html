@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Псевдоэлементы</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h2>Original</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime minima
+      velit aliquam delectus libero harum ipsam amet numquam quod, nisi possimus
+      cum, ea unde eveniet perferendis autem corporis illum maiores. Lorem ipsum
+      dolor, sit amet consectetur adipisicing elit. Nihil, cupiditate nobis
+      quisquam possimus assumenda nostrum rerum.
+    </p>
+
+    <h2>
+      Псевдоэлемент <span class="title">::first-line</span>. Задает стиль первой
+      строки
+    </h2>
+    <br />
+    <span
+      >.firstExemple::first-line{ <br />
+      color: blue;} <br />
+      Только первая строка изменила цвет, если уменшить окно браузера и там
+      только первая строка изменит цвет (уменьши-увидишь)
+    </span>
+    <p class="firstExemple">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime minima
+      velit aliquam delectus libero harum ipsam amet numquam quod, nisi possimus
+      cum, ea unde eveniet perferendis autem corporis illum maiores. Lorem ipsum
+      dolor, sit amet consectetur adipisicing elit. Nihil, cupiditate nobis
+      quisquam possimus assumenda nostrum rerum.
+    </p>
+
+    <h2>
+      Псевдоэлемент <span class="title">::first-leter</span>. Определяет стиль
+      первого символа
+    </h2>
+    <br />
+    <span>
+      .secondExeple::first-letter{ <br />
+      font-size: 30px; <br />
+      color: red; } <br />
+      Поменяли стиль первого символа (буквы)- увеличили размер и цвет
+    </span>
+    <p class="secondExeple">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime minima
+      velit aliquam delectus libero harum ipsam amet numquam quod, nisi possimus
+      cum, ea unde eveniet perferendis autem corporis illum maiores. Lorem ipsum
+      dolor, sit amet consectetur adipisicing elit. Nihil, cupiditate nobis
+      quisquam possimus assumenda nostrum rerum.
+    </p>
+
+    <h2>Original</h2>
+    <ul>
+      <li>Chelsea</li>
+      <li>Chelsea</li>
+      <li>Chelsea</li>
+    </ul>
+    <h1>
+      Псевдоэлемент ::before и ::after ОБЯЗАТЕЛЬНО изспользуются с свойством
+      content: ' '; без этого свойства - псевдоэлемент не отобразиться в
+      браузере. Свойство content ' ' - может иметь пустое значение (во внутерь
+      кавычек ничего не добавляем), так же она может содержать нужный контент -
+      то что мы хотим вывести (в примерах ниже)
+    </h1>
+    <h2>
+      Псевдоэлемент <span class="title">::before</span>. Применяется для
+      отображения желаемого контента ДО содержимого элемента, к которому он
+      добовляется
+    </h2>
+    <span>
+      <br />
+      <br />
+      .oneExemple li::before{ <br />
+      content: '«'; }
+    </span>
+    <ul class="oneExemple">
+      <li>Chelsea</li>
+      <li>Chelsea</li>
+      <li>Chelsea</li>
+    </ul>
+
+    <h2>
+      Псевдоэлемент <span class="title">::after</span>. Применяется для
+      отображения желаемого контента ПОСЛЕ содержимого элемента, к которому он
+      добовляется
+    </h2>
+    <span>
+      <br />
+      .twoExemple li::after{ <br />
+      content: '»'; }
+    </span>
+    <ul class="twoExemple">
+      <li>Chelsea</li>
+      <li>Chelsea</li>
+      <li>Chelsea</li>
+    </ul>
+
+    <h2>Псевдоэлемент ::before и ::after</h2>
+    <br />
+    <span>
+      .threeExemple li::before{ <br />
+      content: '«'; }<br /><br />
+      .threeExemple li::after{<br />
+      content: '»'; }
+    </span>
+    <ul class="threeExemple">
+      <li>Chelsea</li>
+      <li>Chelsea</li>
+      <li>Chelsea</li>
+    </ul>
+
+    <h2>Псевдоэлемент ::before. Пустое свосвой content ' '</h2>
+    <br />
+    <span
+      >.fourExemple li::before {<br />
+      content: ' ';<br />
+      width: 10px;<br />
+      height: 10px;<br />
+      background-color: red;<br />
+      display: inline-block; }<br />
+      добавили новый элемент (видео
+      <a target="_blank"
+        href="https://youtu.be/gM_9k1eWiXA?t=422"
+        >7:00</a
+      >)
+    </span>
+    <ul class="fourExemple">
+      <li>Chelsea</li>
+      <li>Chelsea</li>
+      <li>Chelsea</li>
+    </ul>
+  </body>
+</html>

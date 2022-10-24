@@ -23,3 +23,12 @@
 [background-attachment](https://TestName2022.github.io/ninth2Project/ "background-attachment") - background-attachment
 
 [background-attachment](https://TestName2022.github.io/ninth3Project/ "background-attachment") - background-attachment for body
+
+#### Псевдоклассы
+
+[hover/visited/active](https://TestName2022.github.io/tenthProject/ "hover/visited/active") - :hover; :visited; :active;
+
+[focus](https://TestName2022.github.io/tenth2Project/ "for Form") - :focus; :hover; :visited; :active; - for Form
+
+[fisrt-child/last-child](https://TestName2022.github.io/tenth3Project/ "fisrt-child/last-child") - :first-child; :last-child; nth-child();
+

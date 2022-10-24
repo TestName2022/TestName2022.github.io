@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hover/visited/active</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="block">
+      <h3>Оригинал</h3>
+      <span
+        >Всем ссылкам дали красный цвет (чтобы было понятно где есть
+        ссылкам)</span
+      >
+      <p>
+        <a target="_blank" href="https://google.com">Google</a>, ipsum dolor sit
+        amet consectetur adipisicing elit. Exercitationem iure maxime accusamus
+        soluta perferendis minima magnam quaerat quisquam sunt delectus alias
+        obcaecati, placeat culpa, rem eum officia voluptatum. Optio, aut.
+      </p>
+      <h3>
+        Псевдокласс <span class="text">hover</span> . Срабатывает при наведении
+        на элемент
+      </h3>
+      <span
+        >.firstExemple:hover{<br />
+        color: green; <br />
+        text-decoration: underline; } 
+        <span class="comment"
+          >(при наведении курсором мыши на ссылку, ссылка станет green цвета и
+          подчеркнется (underline - нижнее подчеркивание))
+        </span>
+      </span>
+      <p>
+        <a target="_blank" href="https://google.com" class="firstExemple"
+          >Google</a
+        >, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        iure maxime accusamus soluta perferendis minima magnam quaerat quisquam
+        sunt delectus alias obcaecati, placeat culpa, rem eum officia
+        voluptatum. Optio, aut.
+      </p>
+      <h3>
+        Псевдокласс <span class="text">visited</span>. Срабатывает для
+        посещенных ссылок
+      </h3>
+      <span
+        >.secondExemple:visited{<br />
+        color: blue; } 
+        <span class="comment">
+          После того как нажал на ссылку и посетил сайт, ссылка станет синей -
+          это означает, что посетил сайт
+        </span></span
+      >
+      <p>
+        <a target="_blank" href="https://imdb.com" class="secondExemple">IMDB</a
+        >, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        iure maxime accusamus soluta perferendis minima magnam quaerat quisquam
+        sunt delectus alias obcaecati, placeat culpa, rem eum officia
+        voluptatum. Optio, aut.
+      </p>
+      <h3>
+        Псевдокласс <span class="text">active</span>. Срабатывает при
+        нажатии/зажатии на ссылку
+      </h3>
+      <span
+        >.thirdExemple:active{ <br />
+        color: yellow;
+        } 
+        <span class="comment"
+          >В момент нажание на ссылку (еще не отпустил нажатие, зажал), ссылка
+          становится yellow цвета (означает, типа нажимаешь на эту ссылку)</span
+        >
+      </span>
+      <p>
+        <a target="_blank" href="https://google.com" class="thirdExemple"
+          >Google</a
+        >, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        iure maxime accusamus soluta perferendis minima magnam quaerat quisquam
+        sunt delectus alias obcaecati, placeat culpa, rem eum officia
+        voluptatum. Optio, aut.
+      </p>
+      <h3>Комплексная</h3>
+      <span
+        >.complexExemle:hover{ <br />
+        color: green;<br />
+        text-decoration: underline;
+        }<br /><br />
+        .complexExemle:active{<br />
+        color: black;<br />
+        text-decoration: none;
+        }<br /><br />
+        .complexExemle:visited{<br />
+        color: blue;
+        }</span
+      >
+      <p>
+        <a target="_blank" href="https://gmail.com" class="complexExemle"
+          >Gmail</a
+        >, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        iure maxime accusamus soluta perferendis minima magnam quaerat quisquam
+        sunt delectus alias obcaecati, placeat culpa, rem eum officia
+        voluptatum. Optio, aut.
+      </p>
+      <h3>Комплексная в правильном порядке</h3>
+      <span
+        >.complexExemleRight:visited {<br />
+        color: blue;
+        }<br /><br />
+        .complexExemleRight:hover {<br />
+        color: green;<br />
+        text-decoration: underline;
+        }<br /><br />
+        .complexExemleRight:active {<br />
+        color: black;<br />
+        text-decoration: none;
+        }</span
+      >
+      <p>
+        <a target="_blank" href="https://gmail.com" class="complexExemleRight"
+          >Gmail</a
+        >, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        iure maxime accusamus soluta perferendis minima magnam quaerat quisquam
+        sunt delectus alias obcaecati, placeat culpa, rem eum officia
+        voluptatum. Optio, aut.
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fixed</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="block">
+      <div class="block_1">block_1</div>
+      <div class="block_2">block_2</div>
+      <div class="block_3">block_3</div>
+      <p>
+        position: static; <br />
+        (По умолцанию у всех)
+      </p>
+    </div>
+
+    <div class="secondblock">
+      <div class="secondblock_1">secondblock_1</div>
+      <div class="secondblock_2">secondblock_2</div>
+      <div class="secondblock_3">secondblock_3</div>
+      <p>
+        .secondblock (родительский блок){ <br />
+        position: relative; } (нет смысла писать, не действует здесь)
+        <br /><br />
+        .secondblock_2 { <br />
+        position: fixed; <br />
+        top: 0px; <br />
+        left: 0px; <br />
+        width: 100%; } ( <span>position: fixed;</span> фиксируется в окне
+        браузера (елси прокручиать вниз, то весь контент "едет", а блок
+        зафиксирован), не в контенте а в полном окне браузера (можно задать
+        меньшие размеры и отступы, чтобы сделать в контенте, но это будет
+        "ручная настройка"). ТОЖЕ вырывается из HTML кода (как и в absolute))
+        <br />
+        <br />
+        .secondblock_3 {<br />
+        position: relative; <br />
+        z-index: 1; } (это означает, что secondblock_3 в приоритете! и этот
+        будет над secondblock_2 (он фиксирован, по умолцанию у fixed z-index
+        равен примерно -0,5 ) )
+      </p>
+    </div>
+
+    <div class="thirdblock">
+      <div class="thirdblock_1">thirdblock_1</div>
+      <div class="thirdblock_2">thirdblock_2</div>
+      <div class="thirdblock_3">thirdblock_3</div>
+      <p>
+        .thirdblock (родительский блок для thirdblock_1,2,3 ) { <br />
+        background-color: white; (блок сделали белым, тк он по умолцанию
+        прозрачный) <br />
+        position: relative; <br />
+        z-index: 0;} <br />
+        Всему блоку (.thirdblock (родительский блок для thirdblock_1,2,3 )) дали
+        z-index: 0; он в приоритете чем secondblock_2 (fixed) тк z-index по
+        умолцанию у него "-0,5".  Весь блок thirdblock над secondblock_2 (фиксированым) 
+      </p>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>

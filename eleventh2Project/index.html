@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Псевдоэлементы + Псевдоклассы</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h2>Псевдоэлемент ::before. Пустое свосвой content ' '</h2>
+    <br />
+    <span
+      >ul li::before {<br />
+      content: ' ';<br />
+      width: 10px;<br />
+      height: 10px;<br />
+      background-color: red;<br />
+      display: inline-block; }<br />
+      добавили новый элемент (видео
+      <a target="_blank" href="https://youtu.be/gM_9k1eWiXA?t=422">7:00</a>)
+    </span>
+    <ul class="fourExemple">
+      <li>Chelsea</li>
+      <li>Chelsea</li>
+      <li>Chelsea</li>
+    </ul>
+
+    <h2>Псевдоклассы и Псевдоэлементы</h2>
+    <br />
+    <span 
+      ><br>
+      Только в таком порядке!!
+	  <br>
+      .fiveExemple li:hover::before { <br />
+      background-color:blue; }
+    </span>
+    <ul class="fiveExemple">
+      <li>Chelsea</li>
+      <li>Chelsea</li>
+      <li>Chelsea</li>
+    </ul>
+
+    <br /><br /><br /><br /><br />
+    <h1>
+      Сначала мы всем ul li - даем красный цвет , потом только в .fiveExemple li
+      с помощью псевдокласса (hover - при наведении) и псведоэлемента (::before
+      - до контента) - мы меняем цвет квадрата (который красный и мы его создали
+      сами с помощью ::before)
+    </h1>
+  </body>
+</html>

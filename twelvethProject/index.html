@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>relative</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="block">
+      <div class="block_1">block_1</div>
+      <div class="block_2">block_2</div>
+      <div class="block_3">block_3</div>
+      <p>
+        position: static; <br />
+        (По умолцанию у всех)
+      </p>
+    </div>
+
+    <div class="secondblock">
+      <div class="secondblock_1">secondblock_1</div>
+      <div class="secondblock_2">secondblock_2</div>
+      <div class="secondblock_3">secondblock_3</div>
+      <p>
+        <span
+          ><span class="redColor"> position: relative; </span> - может
+          использоваться допольнительно с свойствами позиционирования (<span
+            class="redColor"
+          >
+            left, right, top, bottom - управляют позицией элемента </span
+          >)
+        </span>
+        <br />
+        .secondblock_2 { <br />
+        position: relative; <br />
+        top: 20px; <br />
+        left: 30px; } <br />
+       <span> Мы перемещаем блок (.secondblock_2) сдвигаем на 20рх от верха и 30рх от
+        лева - от его текущего положения. Вместо себя осталось пустое место.</span>
+      </p>
+    </div>
+
+    <div class="thirdblock">
+      <div class="thirdblock_1">thirdblock_1</div>
+      <div class="thirdblock_2">thirdblock_2</div>
+      <div class="thirdblock_3">thirdblock_3</div>
+      <p>
+        .thirdblock_2 { <br />
+        position: relative; <br />
+        top: 20px; <br />
+        left: 30px; <br />
+        <span class="redColor">z-index: -1; (по умолцанию у всех блоков)</span> }
+        <br /> <br>
+        <span
+          >.thirdblock_3 {<br />
+          position: relative;<br />
+          <span class="redColor"
+            >z-index: 1;} (Мы здесь ставим 1, это означает что .thirdblock_3
+            будет над thirdblock_2 ), чем выше z-index, тем приоритетнее.
+            <span>
+              z-index начинает работать когда включен position: relative;</span
+            >
+          </span>
+        </span>
+      </p>
+    </div>
+  </body>
+</html>

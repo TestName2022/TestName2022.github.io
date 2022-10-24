@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sticky</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="block">
+      <div class="block_1">block_1</div>
+      <div class="block_2">block_2</div>
+      <div class="block_3">block_3</div>
+      <p>
+        position: static; <br />
+        (По умолцанию у всех)
+      </p>
+    </div>
+
+    <div class="secondblock">
+      <div class="secondblock_1">secondblock_1</div>
+      <div class="secondblock_2">secondblock_2</div>
+      <div class="secondblock_3">secondblock_3</div>
+      <p>
+        .secondblock (родительский блок){ <br />
+        position: relative; } (можно не писать, здесь не нужно) <br />
+        <br />
+        .secondblock_2 { <br />
+        position: sticky; <br />
+        top: 0px; } <br />
+        (По началу ведет себя как static, но когда при прокручивание сайта -
+        верхняя граница браузера достигнет его - secondblock_2 "прилипает" на
+        верху (top: 0px;) и до конца родительского (secondblock) блока не
+        отлипает. Когда родительский блок заканчивается, тогда и "отлипает")
+      </p>
+    </div>
+
+    <div class="thirdblock">
+      <div class="thirdblock_1">thirdblock_1</div>
+      <div class="thirdblock_2">thirdblock_2</div>
+      <div class="thirdblock_3">thirdblock_3</div>
+      <div class="thirdblock_4">thirdblock_4</div>
+      <div class="thirdblock_5">thirdblock_5</div>
+      <div class="thirdblock_6">thirdblock_6</div>
+      <div class="thirdblock_7">thirdblock_7</div>
+      <div class="thirdblock_8">thirdblock_8</div>
+      <div class="thirdblock_9">thirdblock_9</div>
+      <div class="thirdblock_10">thirdblock_10</div>
+      <div class="thirdblock_11">thirdblock_11</div>
+      <div class="thirdblock_12">thirdblock_12</div>
+      <p>
+        .thirdblock_1 { position: sticky; top: 0px; } <br />
+        .thirdblock_4 { position: sticky; top: 10px; } <br />
+        .thirdblock_7 { position: sticky; top: 0px; } <br />
+        .thirdblock_10 { width: 50%; margin: 0 auto; position: sticky; top: 0px;
+        } <br />
+        ну ты понял
+      </p>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>

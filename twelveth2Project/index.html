@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>absolute</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="block">
+      <div class="block_1">block_1</div>
+      <div class="block_2">block_2</div>
+      <div class="block_3">block_3</div>
+      <p>
+        position: static; <br />
+        (По умолцанию у всех)
+      </p>
+    </div>
+
+    <div class="secondblock">
+      <div class="secondblock_1">secondblock_1</div>
+      <div class="secondblock_2">secondblock_2</div>
+      <div class="secondblock_3">secondblock_3</div>
+      <p>
+        <span
+          ><span class="redColor"> position: absolute; </span> - может
+          использоваться допольнительно с свойствами позиционирования (<span
+            class="redColor"
+          >
+            left, right, top, bottom - управляют позицией элемента </span
+          >)
+        </span>
+        <br />
+        .secondblock_2 { <br />
+        position: absolute; <br />
+        top: 600px; (если написали бы 0рх, то он был бы вверху)<br />
+        left: 0px; } <br />
+        <span
+          >Блок вырвался из HTML кода, и все коды ниже передвинулись наверх.
+          <span class="redColor">secondblock_2</span> потерял ширину,
+        </span>
+      </p>
+    </div>
+
+    <div class="thirdblock">
+      <div class="thirdblock_1">thirdblock_1</div>
+      <div class="thirdblock_2">thirdblock_2</div>
+      <div class="thirdblock_3">thirdblock_3</div>
+
+      <p>
+        <span
+          >.thirdblock (это родительский блок (контент), все три блока находятся
+          в нем) {<br />
+          position: relative; (это чтобы thirdblock_2 не "улетал" а был в
+          контете) }</span
+        >
+        <br />
+        <br />
+        .thirdblock_2 { <br />
+        position: absolute; <br />
+        top: 0px; <br />
+        left: 0px; <br />
+        /* width: 100%; */} <span class="redColor"> (если еще дадим это, то размеры thirdblock_2 будут на
+        весь контент (по ширине))</span>
+      </p>
+    </div>
+
+    <div class="fourthBlock">
+      <div class="fourthBlock_1">fourthBlock_1</div>
+      <div class="fourthBlock_2">fourthBlock_2</div>
+      <div class="fourthBlock_3">fourthBlock_3</div>
+      <p>
+        .fourthBlock {<br>
+          position: relative;
+        } (Чтобы fourthBlock_2 не "улетел" )<br> <br>
+        .fourthBlock_2{<br>
+          position: absolute; <br>
+          top: 20px; <br>
+          left: 50px; <br>
+          width: 100%;
+        } (даем полную ширину в контете, отступаем от верха и слева)<br> <br>
+        .fourthBlock_3{<br>
+          position: relative;<br>
+          z-index: 1; 
+        } (делаем fourthBlock_3 приоритетнее )
+      </p>
+    </div>
+
+    <div class="fifthBlock">
+      <div class="fifthBlock_1">fifthBlock_1</div>
+      <div class="fifthBlock_2">fifthBlock_2</div>
+      <div class="fifthBlock_3">fifthBlock_3</div>
+      <p>.fifthBlock_2{<br>
+        position: absolute;<br>
+       bottom: 50px;<br>
+       right: 20px;<br>
+       width: 100%;
+      }</p>
+    </div>
+  </body>
+</html>

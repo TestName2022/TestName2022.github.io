@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h2>Оригинал</h2>
+    <h3>
+      Мы создаем блок (в html создаем пустой div, в css height: 200px;
+      box-shadow: 0px 0px 10px #000; margin: 20px; border-radius: 15px; ) По
+      умолчанию блок прозрачный, блок не имеет цвета. Чтобы не повторят код
+      (создание блока) знай, что везде один и тот же код блока
+    </h3>
+    <div class="original"></div>
+    <h2>Пример 1: Свойство <span class="red">background-color</span> </h2>
+    <h3>
+      <span class="red">background-color: blue;</span>  (блок стал синего цвета, цвет можно писать: просто
+      blue; #0000ff; rgb; rgba-(пример ниже)) P.S. background-color: blue; =
+      background: blue; (одинаково)
+    </h3>
+    <div class="exempleColor"></div>
+    <h3>
+      <span class="red"> background-color: rgba(0, 0, 255, 0.3)</span>; ((0, 0, 255) - это синий цвет. 0,3
+      - это прозрачность. где 0 - полная прозрачность, а 1 - полная не
+      прозрачность)
+    </h3>
+    <div class="exempleColorRGBA"></div>
+    <h2>Пример 2: Свойство  <span class="red">background-image</span></h2>
+    <h3>
+      <span class="red">background-image: url(../img/squirtle.jpg); </span>(мы подключаем одну картинку в
+      папке img, эта картинка повторяется то тех пор пока не заполнит весь блок
+      (выглядить так себе(ниже какая картинка нужна)), я увеличил значение
+      height: 400px; чтобы было понятно)
+    </h3>
+    <div class="exempleIMG"></div>
+    <h3>
+      <span class="red">background-image: url(..../img/bg_repeat.jpg);</span> (мы подключаем другую
+      картинку того же размера, но эта картинка вырезана так что каждый его край
+      может быть его началом. Мы не используем большую картинку, потому что
+      маленькая меньше весит, вес страницы будет низкой и быстрее будет работать
+      )
+    </h3>
+    <div class="exempleIMG2"></div>
+
+    <h2>Пример 3: Свойство  <span class="red">background-repeat</span></h2>
+    <h3>
+     background-image: url(../img/squirtle.jpg); (подключаем картинку)<br />
+     <span class="red">background-repeat: no-repeat ;</span> (говорим не повторять) <br />
+      background: url(../img/squirtle.jpg) no-repeat; (краткая форма)
+    </h3>
+    <div class="exempleRepeatNO"></div>
+    <h3>
+      background-image: url(../img/squirtle.jpg); (подключаем картинку)<br />
+      <span class="red">background-repeat: repeat-x ;</span> (повторяет картинку только по горизонтали)
+    </h3>
+    <div class="exempleRepeatX"></div>
+    <h3>
+      background-image: url(../img/squirtle.jpg); (подключаем картинку)<br />
+      <span class="red">background-repeat: repeat-y ;</span> (повторяет картинку только по вертикали)
+    </h3>
+    <div class="exempleRepeatY"></div>
+
+    <h2>Пример 4: Свойство  <span class="red">background-position</span></h2>
+    <h3>
+      background-image: url(../img/squirtle.jpg); (подключаем картинку)<br />
+      background-repeat: no-repeat ; (говорим не повторять); <br />
+      <span class="red">background-position: 0 50% ;</span> (говорим его позицию, 0 - это мы двигаем по
+      горизонтали, 50% - двигаем по вертикали (можно и в px и словами
+      (left....)))
+    </h3>
+    <div class="exemplePosition"></div>
+    <h3>
+      background-image: url(../img/squirtle.jpg); (подключаем картинку)<br />
+      background-repeat: no-repeat ; (говорим не повторять); <br />
+      <span class="red">background-position: center;</span> (говорим его позицию, можно 50% (это значит
+      50% по вертикали и 50% по горизонтали))
+    </h3>
+    <div class="exemplePositionCenter"></div>
+
+    <h2>Пример 5: Свойство  <span class="red">background-size</span></h2>
+    <h3>
+      background-image: url(../img/squirtle.jpg); (вставляем картинку) <br />
+      background-repeat: no-repeat; (не повторяет)<br />
+      <span class="red">background-size: 100% auto;</span> (100% - это ширина, 0 - высота; растягиваем
+      карти по ширине, чтобы заполнить весь блок по ширине )
+    </h3>
+    <div class="exempleSize"></div>
+    <h3>
+      background-image: url(../img/squirtle.jpg); (вставляем картинку) <br />
+      background-repeat: no-repeat; (не повторяет)<br />
+      <span class="red">background-size: auto 100%;</span> (0- ширина, 100% - высота; растягиваем
+      картинку по высоте, )
+    </h3>
+    <div class="exempleSize2"></div>
+    <h3>
+      background-image: url(../img/squirtle.jpg); (вставляем картинку) <br />
+      background-repeat: no-repeat; (не повторяет)<br />
+      <span class="red">background-size: 700px 250px;</span> (можем дать картинке конкретное значение
+      (ширина-высота))
+    </h3>
+    <div class="exempleSize3"></div>
+    <h3>
+      background-image: url(../img/bg.jpg); (вставляем картинку по размерам очень
+      большая) <br />
+      background-repeat: no-repeat; (не повторяет)<br />
+      <span class="red">background-size: contain;</span> (масштабирует картинку по меньшой стороне (по
+      высоте))
+    </h3>
+    <div class="exempleSizeContain"></div>
+    <h3>
+      background-image: url(../img/bg.jpg); (вставляем картинку по размерам очень
+      большая) <br />
+      background-repeat: no-repeat; (не повторяет)<br />
+      <span class="red">background-size: cover;</span> (масштабирует картинку по большой стороне
+      (ширине))
+    </h3>
+    <div class="exempleSizeCover"></div>
+    <h3>
+      background-image: url(../img/bg.jpg); (вставляем картинку по размерам очень
+      большая) <br />
+      background-repeat: no-repeat; (не повторяет)<br />
+      <span class="red">background-size: cover;</span> (масштабирует картинку по большой стороне
+      (ширине)) <br />
+      <span class="red">background-position: center;</span>  (расположит картинку по центру (чтбы центр
+      картинки был по центру))
+    </h3>
+    <div class="exempleSizeCoverCenter"></div>
+
+    <h2>Пример 6:  <span class="red">Установка нескольких фоновых изображений для блока</span></h2>
+    <h3>
+      background: <span class="blue"> url(../img/bg.jpg)0 0/ 150px 150px repeat-x,</span> <span class="green">
+      url(../img/squirtle.jpg)100% 100% no-repeat, </span> <span class="orange"> url(../img/bg_repeat.jpg);</span> <br /><br />
+      <span class="blue"> вставили большую картинку (расположение/поменяли размер и повторятся
+      только по горизонтали) </span> <br />
+    <span class="green">вставили сквиртула (в правом нижнем углу и не повторят ) </span> <br />
+    <span class="orange"> вставили третью картинку (по умолчанию повторяет пока полностью не
+      заполнит весь блок)  </span> <br />
+      НУЖНО ФОНОВУЮ КАРТИНКУ (ТРЕТЬЯ КАРТИНКА) ПИСАТЬ В КОДЕ ПО СЛЕДНЕЙ!!! или
+      сначала написать ее. потом перед ней вставлть другие картинки
+    </h3>
+    <div class="exempleAny"></div>
+  </body>
+</html>

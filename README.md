@@ -40,5 +40,17 @@
 
 [hover/before](https://TestName2022.github.io/eleventh2Project/ "hover/before") - комбинация
 
+## Позиционирование
+
+[relative](https://TestName2022.github.io/twelvethProject/ "relative") - position: relative;
+
+[absolute](https://TestName2022.github.io/twelveth2Project/ "absolute") - position: absolute;
+
+[fixed](https://TestName2022.github.io/twelveth3Project/ "fixed") - position: fixed;
+
+[sticky](https://TestName2022.github.io/twelveth4Project/ "sticky") - position: sticky;
+
+
+
 
 

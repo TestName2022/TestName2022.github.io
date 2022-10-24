@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>first-child/last-child</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h2>Original</h2>
+    <ul>
+      <li>Челси</li>
+      <li>Арсенал</li>
+      <li>Мю</li>
+      <li>Ливерпуль</li>
+      <li>Мс</li>
+    </ul>
+
+    <h2>
+      Псевдокласс <span>first-child</span> . Обращается к первому элементу в
+      блоке
+    </h2>
+    <p>
+      .firstExemple li:first-child{ <br />
+      color: blue; } <br />
+      Первый элемент стал синим
+    </p>
+    <ul class="firstExemple">
+      <li>Челси</li>
+      <li>Арсенал</li>
+      <li>Мю</li>
+      <li>Ливерпуль</li>
+      <li>Мс</li>
+    </ul>
+
+    <h2>
+      Псевдокласс <span>last-child</span> . Обращается к последнему элементу в
+      блоке
+    </h2>
+    <p>
+      .secondExemple li:last-child{ <br />
+      color: blue; } <br />
+      Последний элемент стал синим
+    </p>
+    <ul class="secondExemple">
+      <li>Челси</li>
+      <li>Арсенал</li>
+      <li>Мю</li>
+      <li>Ливерпуль</li>
+      <li>Мс</li>
+    </ul>
+
+    <h2>
+      Псевдокласс <span>nth-child( )</span>. Обращается к конкретному элементу в
+      блоке
+    </h2>
+    <p>
+      .thirdExemple li:nth-child(3){ <br />
+      color: blue; } <br />
+      Конкретний (третий) элемент стал синим
+    </p>
+    <ul class="thirdExemple">
+      <li>Челси</li>
+      <li>Арсенал</li>
+      <li>Мю</li>
+      <li>Ливерпуль</li>
+      <li>Мс</li>
+    </ul>
+
+    <h2>
+      Псевдокласс <span>nth-child(odd)</span>. Обращается ко всем нечетным
+      элементам в блоке
+    </h2>
+    <p>
+      .fourthExemple li:nth-child(odd){ <br />
+      color: blue; } <br />
+      Первый, третий и пятый элемент поменяли цвет
+    </p>
+    <ul class="fourthExemple">
+      <li>Челси</li>
+      <li>Арсенал</li>
+      <li>Мю</li>
+      <li>Ливерпуль</li>
+      <li>Мс</li>
+    </ul>
+
+    <h2>
+      Псевдокласс <span>nth-child(even)</span>. Обращается ко всем четным
+      элементам в блоке
+    </h2>
+    <p>
+      .fifthExemple li:nth-child(even){ <br />
+      color: blue; } <br />
+      Второй и четверты элемент поменяли цвет
+    </p>
+    <ul class="fifthExemple">
+      <li>Челси</li>
+      <li>Арсенал</li>
+      <li>Мю</li>
+      <li>Ливерпуль</li>
+      <li>Мс</li>
+    </ul>
+
+
+    <h2>Комбинирование псевдоклассов</h2>
+    <p>.comboExemple li:first-child:hover{ <br>
+      color: blue;<br>
+      background-color: red; <br>
+      display: inline-block;
+    } <br> При наведение (hover) на первый элемент (first-child) - элемент меняет цвет и фон</p>
+    <ul class="comboExemple">
+      <li>Челси</li>
+      <li>Арсенал</li>
+      <li>Мю</li>
+      <li>Ливерпуль</li>
+      <li>Мс</li>
+    </ul>
+
+  </body>
+</html>

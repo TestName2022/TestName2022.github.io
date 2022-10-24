@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>for Form</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form action="#">
+      <div>
+        <h2>Original</h2>
+        <br />
+        <input type="text" />
+        <button>Отправить</button>
+      </div>
+      <div>
+        <h2>Псевдокласс focus.Срабатывает при получении элементом фокуса</h2>
+        <p>
+          .firstExemple:focus{ <br />
+          box-shadow: 0px 0px 10px red; } <br />
+          когда щелкаешь на поле ввода, поле выделяется и понимаешь где ты
+          заполняешь
+        </p>
+        <input type="text" class="firstExemple" />
+        <button type="submit">Отправить</button>
+      </div>
+      <div>
+        <h2>Псевдокласс hover</h2>
+        <p>
+          .secondExemple:hover{ <br />
+          color: blue; } <br />
+          При наведении на кнопку, слово ОТПРАВИТЬ поменяет цвет на синий + в
+          поле для ввода текста мигающая фигня будет синего цвета (поначалу)
+        </p>
+        <input type="text" class="secondExemple" />
+        <button type="submit" class="secondExemple">Отправить</button>
+      </div>
+      <div>
+        <h2>Псевдокласс active</h2>
+        <p>.thirdExemple:active{<br>
+          background-color: blueviolet;
+          } <br> При нажатии на кнопку, фон кнопки поменяет цвет на фиолетовый
+         </p>
+        <input type="text" />
+        <button type="submit" class="thirdExemple">Отправить</button>
+      </div>
+      <div>
+        <h2>Комплекс</h2>
+        <p>.complexInput:focus{ <br>
+          box-shadow: 0px 0px 10px red;
+        }<br><br>
+        .complexButton:hover{<br>
+        color: black;<br>
+        background-color: brown;
+        }<br><br>
+        .complexButton:active{<br>
+          background-color: aqua;<br>
+          color: blue;
+        }</p>
+        <input type="text" class="complexInput" />
+        <button type="submit" class="complexButton">Отправить</button>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>flex-basis/flex-grow/flex-shrink</title>
+  </head>
+  <body>
+    <h2>
+      Original <br />.block__row { <br />
+      display: flex; }
+    </h2>
+    <p>
+      Мы создали блок wrapper (черная граница - єто наш сайт) <br />
+      мы создаем блок block (красная граница - єто наш конетет сайта) <br />
+      наш конетет делится на две части (block__row (жирная желтая граница) и
+      block__list (синяя граница)) <br />
+      в блоке block__row мы создаем три блока block__column (жирная виолетовая
+      граница) + туда же добаваляем класс .block__column_1,2,3 (для кажого,
+      чтобы могли конкретно обращатся к конкретной колонке) Пример
+      (div)block__column .block__column_1 (/div) <br />
+      в каждом блоке block__column мы создаем блок block__item (белая граница с
+      зеленым фоном и с цифрами)
+    </p>
+    <div class="wrapper">
+      <div class="block">
+        <div class="block__row">
+          <div class="block__column block__column_1">
+            <div class="block__item">1</div>
+          </div>
+          <div class="block__column block__column_2">
+            <div class="block__item">2 Lorem ipsum dolor sit,<br />dsfs</div>
+          </div>
+          <div class="block__column block__column_3">
+            <div class="block__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+
+    <h2>Пример 1: display: flex; (flex-basis)</h2>
+    <p>
+      .block__row { <br />
+      display: flex;<br />}<br /><br />
+
+      .block__column { <br />
+      flex-basis: 300px; <br />
+      }<br />
+      Мы задаем всем трем колонкам ширину не больше 300рх <br />
+      По умолчанию flex-basis: auto; - сколько контента такой и размер
+    </p>
+
+    <div class="Secondwrapper">
+      <div class="Secondblock">
+        <div class="Secondblock__row">
+          <div class="Secondblock__column Secondblock__column-1">
+            <div class="Secondblock__item">1</div>
+          </div>
+          <div class="Secondblock__column Secondblock__column-2">
+            <div class="Secondblock__item">
+              2 Lorem ipsum dolor sit,<br />dsfs
+            </div>
+          </div>
+          <div class="Secondblock__column Secondblock__column-3">
+            <div class="Secondblock__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+
+    <h2>Пример 2: display: flex; (flex-basis)</h2>
+    <p>
+      .block__row {<br />
+      display: flex; <br />
+      } <br />
+      <br />
+      .block__column-1 { <br />
+      flex-basis: 100%; <br />
+      } <br />
+      Мы задали только для первой колонки flex-basis: 100%; - это означает чтобы
+      он занял всё пустое пространство что осталось
+    </p>
+    <div class="Thirdwrapper">
+      <div class="Thirdblock">
+        <div class="Thirdblock__row">
+          <div class="Thirdblock__column Thirdblock__column-1">
+            <div class="Thirdblock__item">1</div>
+          </div>
+          <div class="Thirdblock__column Thirdblock__column-2">
+            <div class="Thirdblock__item">
+              2 Lorem ipsum dolor sit,<br />dsfs
+            </div>
+          </div>
+          <div class="Thirdblock__column Thirdblock__column-3">
+            <div class="Thirdblock__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+
+    <h2>Пример 3: display: flex; (flex-grow)</h2>
+    <p>
+      .block__row {<br />
+      display: flex; } <br /><br />
+      .lock__column {<br />
+      flex-grow: 1; <br />
+      }<br />
+      Автомотически заполняют весь контейнер (всё пустое пространство) <br />
+      по умолчанию flex-grow: 0; - нельзя заполнять
+    </p>
+    <div class="Fourthwrapper">
+      <div class="Fourthblock">
+        <div class="Fourthblock__row">
+          <div class="Fourthblock__column Fourthblock__column-1">
+            <div class="Fourthblock__item">1</div>
+          </div>
+          <div class="Fourthblock__column Fourthblock__column-2">
+            <div class="Fourthblock__item">
+              2 Lorem ipsum dolor sit,<br />dsfs
+            </div>
+          </div>
+          <div class="Fourthblock__column Fourthblock__column-3">
+            <div class="Fourthblock__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+
+    <h2>Пример 4: Комбинация ( flex-basis / flex-grow)</h2>
+    <p>
+      .block__row {<br />
+      display: flex; } <br /><br />
+      .block__column {<br />
+      flex-basis: 300px; <br />
+      flex-grow: 1; <br />
+      }<br />
+      Сначала мы делаем так чтобы все колонки были одинаковые flex-basis: 300px;
+      (пример 1) <br />
+      потом мы заполняем всё пустое пространство в контейнере - равномерно
+    </p>
+    <div class="Fifthwrapper">
+      <div class="Fifthblock">
+        <div class="Fifthblock__row">
+          <div class="Fifthblock__column Fifthblock__column-1">
+            <div class="Fifthblock__item">1</div>
+          </div>
+          <div class="Fifthblock__column Fifthblock__column-2">
+            <div class="Fifthblock__item">
+              2 Lorem ipsum dolor sit,<br />dsfs
+            </div>
+          </div>
+          <div class="Fifthblock__column Fifthblock__column-3">
+            <div class="Fifthblock__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+
+    <h2>Пример 5: display: flex; (flex-shrink)</h2>
+    <p>
+      .block__row {<br />
+      display: flex; } <br /><br />
+      .block__column {<br />
+      flex-shrink: 0; <br />
+      } <br />
+      Мы говорим что нельзя изменять свой стандарстый размер (при
+      уменьшении/увеличении экрана)
+      <br />
+      По умолчанию flex-shrink: 1; - можно изменять размер
+    </p>
+    <div class="Sixthwrapper">
+      <div class="Sixthblock">
+        <div class="Sixthblock__row">
+          <div class="Sixthblock__column Sixthblock__column-1">
+            <div class="Sixthblock__item">1</div>
+          </div>
+          <div class="Sixthblock__column Sixthblock__column-2">
+            <div class="Sixthblock__item">
+              2 Lorem ipsum dolor sit,<br />dsfs
+            </div>
+          </div>
+          <div class="Sixthblock__column Sixthblock__column-3">
+            <div class="Sixthblock__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+
+    <h2>Пример 6: Комбинация (flex-basis / flex-shrink)</h2>
+    <p>
+      .block__row {<br />
+      display: flex; } <br /><br />
+      .block__column {<br />
+      flex-basis: 300px; <br />
+      flex-shrink: 0; <br />
+      } <br />
+      Сначала дали всем колонкам одинаковые размеры flex-basis: 300px;, потом
+      сказали что нельзя изменять размер когда уменьшаетья экран браузера
+    </p>
+    <div class="Seventhwrapper">
+      <div class="Seventhblock">
+        <div class="Seventhblock__row">
+          <div class="Seventhblock__column Seventhblock__column-1">
+            <div class="Seventhblock__item">1</div>
+          </div>
+          <div class="Seventhblock__column Seventhblock__column-2">
+            <div class="Seventhblock__item">
+              2 Lorem ipsum dolor sit,<br />dsfs
+            </div>
+          </div>
+          <div class="Seventhblock__column Seventhblock__column-3">
+            <div class="Seventhblock__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+  </body>
+</html>

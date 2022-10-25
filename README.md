@@ -16,6 +16,23 @@
 
 [forBox](https://TestName2022.github.io/forBox/ "forBox") - Свойство и стили блоков (outline (внешняя граница блока), box-shadow + inset (тень внутри блока) opacity (уровень прозрачности), visibility)
 
+## flex
+
+#### для контейнера
+[for row - justify-content](https://TestName2022.github.io/forRow__jc/ "justify-content") - justify-content(→)
+
+[for row - align-items](https://TestName2022.github.io/forRow__align-items/ "align-items") - align-items(↓)
+
+[for row - align-content](https://TestName2022.github.io/align-content/ "align-content") - align-content (две и больше строк)
+
+[for row - flex-wrap](https://TestName2022.github.io/forRow__flex-wrap/ "flex-wrap") - flex-wrap: wrap; flex-wrap: wrap-reverse;
+
+[for column](https://TestName2022.github.io/flex-direction-column;/ "column") - flex-direction: column; align-items(→)  / justify-content(↓)
+
+#### для элемента
+
+
+
 ## background
 
 [background](https://TestName2022.github.io/ninthProject/ "background") - background(-color; -image; -repeat; -position; -size;)

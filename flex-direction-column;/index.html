@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>flex-direction: column / align-items / justify-content</title>
+  </head>
+  <body>
+    <h2>Original <br /></h2>
+    <p>
+      Мы создали блок wrapper (черная граница - єто наш сайт) <br />
+      мы создаем блок block (красная граница - єто наш конетет сайта) <br />
+      наш конетет делится на две части (block__row (жирная желтая граница) и
+      block__list (синяя граница)) <br />
+      в блоке block__row мы создаем три блока block__column (жирная виолетовая
+      граница) + туда же добаваляем класс .block__column_1,2,3 (для кажого,
+      чтобы могли конкретно обращатся к конкретной колонке) Пример
+      (div)block__column .block__column_1 (/div) <br />
+      в каждом блоке block__column мы создаем блок block__item (белая граница с
+      зеленым фоном и с цифрами)
+    </p>
+    <div class="wrapper">
+      <div class="block">
+        <div class="block__row">
+          <div class="block__column block__column_1">
+            <div class="block__item">1</div>
+          </div>
+          <div class="block__column block__column_2">
+            <div class="block__item">2 Lorem ipsum dolor sit,<br />dsfs</div>
+          </div>
+          <div class="block__column block__column_3">
+            <div class="block__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+
+    <h2>Пример 1: display: flex;</h2>
+    <p>
+      .block__row { <br />
+      display: flex;<br />}<br /><br />
+
+      Мы даем значение display: flex; ( и еще по умолчанию flex-direction:
+      row;)- всё что внутри кантейнера стоновятся в ряд и мы потом можем
+      изменять растоновку, размеры и тд
+    </p>
+
+    <div class="Secondwrapper">
+      <div class="Secondblock">
+        <div class="Secondblock__row">
+          <div class="Secondblock__column Secondblock__column-1">
+            <div class="Secondblock__item">1</div>
+          </div>
+          <div class="Secondblock__column Secondblock__column-2">
+            <div class="Secondblock__item">
+              2 Lorem ipsum dolor sit,<br />dsfs
+            </div>
+          </div>
+          <div class="Secondblock__column Secondblock__column-3">
+            <div class="Secondblock__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+
+    <h2>Пример 2: display: flex; (flex-direction: column;)</h2>
+    <p>
+      .block__row {<br />
+      display: flex; <br />
+      flex-direction: column; <br />  align-items: stretch; (по умолчанию - растягивается) <br>
+      } <br />
+      Мы даем значение display: flex; - всё что внутри кантейнера стоновятся в
+      ряд по умолчанию(пример 1) <br />
+      Потом даем еще значение flex-direction: column;, чтобы всё стало по
+      вертикали (в колонку, в строку)- теперь можем и сдесь воспользоваться -
+      изменять размер, растоновку и тд <br>
+    
+    </p>
+    <div class="Thirdwrapper">
+      <div class="Thirdblock">
+        <div class="Thirdblock__row">
+          <div class="Thirdblock__column Thirdblock__column-1">
+            <div class="Thirdblock__item">1</div>
+          </div>
+          <div class="Thirdblock__column Thirdblock__column-2">
+            <div class="Thirdblock__item">
+              2 Lorem ipsum dolor sit,<br />dsfs
+            </div>
+          </div>
+          <div class="Thirdblock__column Thirdblock__column-3">
+            <div class="Thirdblock__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+
+    <h2>Пример 3: display: flex; (align-items)</h2>
+    <p>
+      .block__row {<br />
+      display: flex; <br />
+      flex-direction: column; <br />
+      align-items: flex-start; <br> } <br /><br />
+
+      Прижиается к началу - а это у нас с лева (align-items: flex-start;) и так
+      можно все свойства и значение давать
+    </p>
+    <div class="Fourthwrapper">
+      <div class="Fourthblock">
+        <div class="Fourthblock__row">
+          <div class="Fourthblock__column Fourthblock__column-1">
+            <div class="Fourthblock__item">1</div>
+          </div>
+          <div class="Fourthblock__column Fourthblock__column-2">
+            <div class="Fourthblock__item">
+              2 Lorem ipsum dolor sit,<br />dsfs
+            </div>
+          </div>
+          <div class="Fourthblock__column Fourthblock__column-3">
+            <div class="Fourthblock__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+
+    <h2>Пример 3.1: display: flex; (align-items)</h2>
+    <p>
+      .block__row {<br />
+      display: flex; <br />
+      flex-direction: column; <br />
+      align-items: center; <br> } <br /><br />
+
+      
+    </p>
+    <div class="Fourthwrapper">
+      <div class="Fourthblock">
+        <div class="Fourthblock__row1">
+          <div class="Fourthblock__column Fourthblock__column-1">
+            <div class="Fourthblock__item">1</div>
+          </div>
+          <div class="Fourthblock__column Fourthblock__column-2">
+            <div class="Fourthblock__item">
+              2 Lorem ipsum dolor sit,<br />dsfs
+            </div>
+          </div>
+          <div class="Fourthblock__column Fourthblock__column-3">
+            <div class="Fourthblock__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+
+    <h2>Пример 4: display: flex; ( justify-content)</h2>
+    <p>
+      .block__row {<br />
+      display: flex; <br />
+      flex-direction: column; <br />
+      justify-content: space-between;<br> }<br />
+      Мы увеличили высоту block__row на 700рх. Мы пожем третию колонку
+      (block__column-3) приклееть в низ (типа footer в сайтах
+      <a href="https://youtu.be/cXAUxbu6X2E?t=382"> video </a>)
+    </p>
+    <div class="Fifthwrapper">
+      <div class="Fifthblock">
+        <div class="Fifthblock__row">
+          <div class="Fifthblock__column Fifthblock__column-1">
+            <div class="Fifthblock__item">1</div>
+          </div>
+          <div class="Fifthblock__column Fifthblock__column-2">
+            <div class="Fifthblock__item">
+              2 Lorem ipsum dolor sit,<br />dsfs
+            </div>
+          </div>
+          <div class="Fifthblock__column Fifthblock__column-3">
+            <div class="Fifthblock__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+
+    <h2>Пример 4.1: display: flex; ( justify-content)</h2>
+    <p>
+      .block__row {<br />
+      display: flex; <br />
+      flex-direction: column; <br />
+      justify-content: flex-start;<br> }<br />
+      Мы увеличили высоту block__row на 700рх.
+    </p>
+    <div class="Fifthwrapper">
+      <div class="Fifthblock">
+        <div class="Fifthblock__row1">
+          <div class="Fifthblock__column Fifthblock__column-1">
+            <div class="Fifthblock__item">1</div>
+          </div>
+          <div class="Fifthblock__column Fifthblock__column-2">
+            <div class="Fifthblock__item">
+              2 Lorem ipsum dolor sit,<br />dsfs
+            </div>
+          </div>
+          <div class="Fifthblock__column Fifthblock__column-3">
+            <div class="Fifthblock__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+
+   
+  </body>
+</html>

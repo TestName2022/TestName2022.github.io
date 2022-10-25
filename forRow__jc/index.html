@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>justify-content (row)</title>
+  </head>
+  <body>
+    <h2>Original</h2>
+    <p>
+      Мы создали блок wrapper (черная граница - єто наш сайт) <br />
+      мы создаем блок block (красная граница - єто наш конетет сайта) <br />
+      наш конетет делится на две части (block__row (жирная желтая граница) и
+      block__list (синяя граница)) <br />
+      в блоке block__row мы создаем три блока block__column (жирная виолетовая
+      граница) <br />
+      в каждом блоке block__column мы создаем блок block__item (белая граница с
+      зеленым фоном и с цифрами)
+    </p>
+    <div class="wrapper">
+      <div class="block">
+        <div class="block__row">
+          <div class="block__column">
+            <div class="block__item">1</div>
+          </div>
+          <div class="block__column">
+            <div class="block__item">2</div>
+          </div>
+          <div class="block__column">
+            <div class="block__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+    <h2>
+      Пример 1: display: flex (justify-content: flex-star; (по умолчанию))
+    </h2>
+    <p>
+      .block__row{ <br />
+      display: flex <br />
+      } <br />
+      Мы видим что все содержимое block__row стало по горизонтали <br />
+      Элементы "склеились" между собой с права (justify-content: flex-star;)(поуменьшай экран)
+    </p>
+
+    <div class="Secondwrapper">
+      <div class="Secondblock">
+        <div class="Secondblock__row">
+          <div class="Secondblock__column">
+            <div class="Secondblock__item">1</div>
+          </div>
+          <div class="Secondblock__column">
+            <div class="Secondblock__item">2</div>
+          </div>
+          <div class="Secondblock__column">
+            <div class="Secondblock__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+    <h2>Пример 2: display: inline-flex;</h2>
+    <p>
+      .block__row { <br />
+      display: inline-flex;<br />
+      } <br />
+      (напиши text-align: center; будет по центру)
+    </p>
+    <div class="Thirdwrapper">
+      <div class="Thirdblock">
+        <div class="Thirdblock__row">
+          <div class="Thirdblock__column">
+            <div class="Thirdblock__item">1</div>
+          </div>
+          <div class="Thirdblock__column">
+            <div class="Thirdblock__item">2</div>
+          </div>
+          <div class="Thirdblock__column">
+            <div class="Thirdblock__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+    <h2>Пример 3: display: flex; (justify-content: flex-end;)</h2>
+    <p>
+      .block__row { <br />
+      display: flex; <br />
+      justify-content: flex-end;<br />
+      } <br />
+      Наши flex элементы будут с права
+    </p>
+    <div class="Fourthwrapper">
+      <div class="Fourthblock">
+        <div class="Fourthblock__row">
+          <div class="Fourthblock__column">
+            <div class="Fourthblock__item">1</div>
+          </div>
+          <div class="Fourthblock__column">
+            <div class="Fourthblock__item">2</div>
+          </div>
+          <div class="Fourthblock__column">
+            <div class="Fourthblock__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+    <h2>Пример 4: display: flex; (justify-content: center;)</h2>
+    <p>
+      .block__row { <br />
+      display: flex; <br />
+      justify-content: center;<br />
+      } <br />
+      Наши flex элементы будут по центру
+    </p>
+    <div class="Fifthwrapper">
+      <div class="Fifthblock">
+        <div class="Fifthblock__row">
+          <div class="Fifthblock__column">
+            <div class="Fifthblock__item">1</div>
+          </div>
+          <div class="Fifthblock__column">
+            <div class="Fifthblock__item">2</div>
+          </div>
+          <div class="Fifthblock__column">
+            <div class="Fifthblock__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+    <h2>Пример 5: display: flex; (justify-content: space-between;)</h2>
+    <p>
+      .block__row { <br />
+      display: flex; <br />
+      justify-content: space-between;<br />
+      } <br />
+      Первый flex элемент (1) прижался к левому краю, а последний (3) к правому,
+      дригие (в нашем случие только второй flex элемент (2)) будут размещатся
+      между первым и последним так, чтобы между элементами были одинаковое
+      пространство (не отступ). Если уменьшать экран, то пространство будет тоже
+      уменьшаться так чтобы было одинаковое пространство между ними
+    </p>
+    <div class="Sixthwrapper">
+      <div class="Sixthblock">
+        <div class="Sixthblock__row">
+          <div class="Sixthblock__column">
+            <div class="Sixthblock__item">1</div>
+          </div>
+          <div class="Sixthblock__column">
+            <div class="Sixthblock__item">2</div>
+          </div>
+          <div class="Sixthblock__column">
+            <div class="Sixthblock__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+    <h2>Пример 6: display: flex; (justify-content: space-around;)</h2>
+    <p>
+      .block__row { <br />
+      display: flex; <br />
+      justify-content: space-around;<br />
+      } <br />
+      Одинаковое пространство добовляется и с лева и с права flex элемента
+      <br />
+      Мы видим что для каждого flex элемента добавились пространства: для 1
+      добавилось и с лево и с права. так же и остальным. <br />
+      Почему не одинаковое пространство межуд 1 и 2; 2 и 3;? Потому что у
+      первого flex элемента с права есть пространство, а у второго flex элемента
+      есть пространство с лева - и вот эти пространство стоят рядом, значит у
+      второго элемента два пространства и с лева и с права (<a
+        href="https://youtu.be/EO8hH_2OwCU?t=376"
+        >видео для понимания</a
+      >
+      )
+    </p>
+    <div class="Seventhwrapper">
+      <div class="Seventhblock">
+        <div class="Seventhblock__row">
+          <div class="Seventhblock__column">
+            <div class="Seventhblock__item">1</div>
+          </div>
+          <div class="Seventhblock__column">
+            <div class="Seventhblock__item">2</div>
+          </div>
+          <div class="Seventhblock__column">
+            <div class="Seventhblock__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+  </body>
+</html>

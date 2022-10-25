@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>align-items(row)</title>
+  </head>
+  <body>
+    <h2>Original</h2>
+    <p>
+      Мы создали блок wrapper (черная граница - єто наш сайт) <br />
+      мы создаем блок block (красная граница - єто наш конетет сайта) <br />
+      наш конетет делится на две части (block__row (жирная желтая граница) и
+      block__list (синяя граница)) <br />
+      в блоке block__row мы создаем три блока block__column (жирная виолетовая
+      граница) <br />
+      в каждом блоке block__column мы создаем блок block__item (зеленая граница
+      с зеленым фоном и с цифрами) + добавили текст второму контенту (2)
+    </p>
+    <div class="wrapper">
+      <div class="block">
+        <div class="block__row">
+          <div class="block__column">
+            <div class="block__item">1</div>
+          </div>
+          <div class="block__column">
+            <div class="block__item">
+              2 <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              rem id, reprehenderit sit totam praesentium iste cupiditate
+              pariatur temporibus eos voluptatibus reiciendis enim facilis
+              maxime fuga nesciunt impedit eius explicabo.
+            </div>
+          </div>
+          <div class="block__column">
+            <div class="block__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+    <h2>Пример 1: display: flex (align-items: stretch; (по умолчанию))</h2>
+    <p>
+      .block__row{ <br />
+      display: flex <br />
+      } <br />
+      Мы видим что все содержимое block__row стало по горизонтали <br />
+      Secondblock__column "склеились" между собой (поуменьшай экран) Тк во
+      втором элементе контента больше, остальные элементы (Secondblock__column)
+      взяли его размеры
+    </p>
+
+    <div class="Secondwrapper">
+      <div class="Secondblock">
+        <div class="Secondblock__row">
+          <div class="Secondblock__column">
+            <div class="Secondblock__item">1</div>
+          </div>
+          <div class="Secondblock__column">
+            <div class="Secondblock__item">
+              2 <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              rem id, reprehenderit sit totam praesentium iste cupiditate
+              pariatur temporibus eos voluptatibus reiciendis enim facilis
+              maxime fuga nesciunt impedit eius explicabo.
+            </div>
+          </div>
+          <div class="Secondblock__column">
+            <div class="Secondblock__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+
+    <h2>Пример 2: display: inline-flex; (чтобы знал)</h2>
+    <p>
+      .block__row { <br />
+      display: inline-flex;<br />
+      } <br />
+      (напиши text-align: center; будет по центру)
+    </p>
+    <div class="Thirdwrapper">
+      <div class="Thirdblock">
+        <div class="Thirdblock__row">
+          <div class="Thirdblock__column">
+            <div class="Thirdblock__item">1</div>
+          </div>
+          <div class="Thirdblock__column">
+            <div class="Thirdblock__item">
+              2 <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              rem id, reprehenderit sit totam praesentium iste cupiditate
+              pariatur temporibus eos voluptatibus reiciendis enim facilis
+              maxime fuga nesciunt impedit eius explicabo.
+            </div>
+          </div>
+          <div class="Thirdblock__column">
+            <div class="Thirdblock__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+
+    <h2>Пример 3: display: flex; (align-items: flex-start;)</h2>
+    <p>
+      .block__row { <br />
+      display: flex; <br />
+      align-items: flex-start;<br />
+      } <br />
+      Прижимает к верху, со своими размерами
+    </p>
+    <div class="Fourthwrapper">
+      <div class="Fourthblock">
+        <div class="Fourthblock__row">
+          <div class="Fourthblock__column">
+            <div class="Fourthblock__item">1</div>
+          </div>
+          <div class="Fourthblock__column">
+            <div class="Fourthblock__item">
+              2 <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              rem id, reprehenderit sit totam praesentium iste cupiditate
+              pariatur temporibus eos voluptatibus reiciendis enim facilis
+              maxime fuga nesciunt impedit eius explicabo.
+            </div>
+          </div>
+          <div class="Fourthblock__column">
+            <div class="Fourthblock__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+
+    <h2>Пример 4: display: flex; (align-items: flex-end;)</h2>
+    <p>
+      .block__row { <br />
+      display: flex; <br />
+      align-items: flex-end;<br />
+      } <br />
+      Прижимает к низу
+    </p>
+    <div class="Fifthwrapper">
+      <div class="Fifthblock">
+        <div class="Fifthblock__row">
+          <div class="Fifthblock__column">
+            <div class="Fifthblock__item">1</div>
+          </div>
+          <div class="Fifthblock__column">
+            <div class="Fifthblock__item">
+              2 <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              rem id, reprehenderit sit totam praesentium iste cupiditate
+              pariatur temporibus eos voluptatibus reiciendis enim facilis
+              maxime fuga nesciunt impedit eius explicabo.
+            </div>
+          </div>
+          <div class="Fifthblock__column">
+            <div class="Fifthblock__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+
+    <h2>Пример 5: display: flex; (align-items: center;)</h2>
+    <p>
+      .block__row { <br />
+      display: flex; <br />
+      align-items: center;<br />
+      } <br />
+      Выстраиваются по ценру самого высокого элемента (второго элемента)
+    </p>
+    <div class="Sixthwrapper">
+      <div class="Sixthblock">
+        <div class="Sixthblock__row">
+          <div class="Sixthblock__column">
+            <div class="Sixthblock__item">1</div>
+          </div>
+          <div class="Sixthblock__column">
+            <div class="Sixthblock__item">
+              2 <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              rem id, reprehenderit sit totam praesentium iste cupiditate
+              pariatur temporibus eos voluptatibus reiciendis enim facilis
+              maxime fuga nesciunt impedit eius explicabo.
+            </div>
+          </div>
+          <div class="Sixthblock__column">
+            <div class="Sixthblock__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+  </body>
+</html>

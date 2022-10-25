@@ -31,6 +31,9 @@
 
 #### для элемента
 
+[align-self/order](https://TestName2022.github.io/align-self_order/ "align-self/order") - align-self / order
+
+[flex](https://TestName2022.github.io/flex-shrinkForRow/ "flex") - flex-basis (размер) / flex-grow (заполнение контейнера - по ум. 0 - нельзя заполнять) / flex-shrink (изменение размера - по ум. 1 - можно изменять)
 
 
 ## background

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>align-self / order</title>
+  </head>
+  <body>
+    <h2>
+      Original <br />.block__row { <br />
+      display: flex; }
+    </h2>
+    <p>
+      Мы создали блок wrapper (черная граница - єто наш сайт) <br />
+      мы создаем блок block (красная граница - єто наш конетет сайта) <br />
+      наш конетет делится на две части (block__row (жирная желтая граница) и
+      block__list (синяя граница)) <br />
+      в блоке block__row мы создаем три блока block__column (жирная виолетовая
+      граница) + туда же добаваляем класс .block__column_1,2,3 (для кажого,
+      чтобы могли конкретно обращатся к конкретной колонке) Пример
+      (div)block__column .block__column_1 (/div) <br />
+      в каждом блоке block__column мы создаем блок block__item (белая граница с
+      зеленым фоном и с цифрами)
+    </p>
+    <div class="wrapper">
+      <div class="block">
+        <div class="block__row">
+          <div class="block__column block__column_1">
+            <div class="block__item">1</div>
+          </div>
+          <div class="block__column block__column_2">
+            <div class="block__item">2 Lorem ipsum dolor sit,<br />dsfs</div>
+          </div>
+          <div class="block__column block__column_3">
+            <div class="block__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+    <h2>Пример 1: display: flex; (align-self)</h2>
+    <p>
+      .block__row { <br />
+      display: flex;}<br /><br />
+
+      .block__column-1 {<br />
+      align-self: center; }<br /><br />
+
+      .block__column-3 {<br />
+      align-self: flex-end; }
+      <br />
+      align-self применяется только в flex элементу. у нее такие же функции как
+      и в align-items. <br />
+      мы дали конкретным элентами свойства. первому чтобы он был по центру, а
+      третьему чтобы был снизу
+    </p>
+
+    <div class="Secondwrapper">
+      <div class="Secondblock">
+        <div class="Secondblock__row">
+          <div class="Secondblock__column Secondblock__column-1">
+            <div class="Secondblock__item">1</div>
+          </div>
+          <div class="Secondblock__column Secondblock__column-2">
+            <div class="Secondblock__item">
+              2 Lorem ipsum dolor sit,<br />dsfs
+            </div>
+          </div>
+          <div class="Secondblock__column Secondblock__column-3">
+            <div class="Secondblock__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+
+    <h2>Пример 2: комбинация (align-items и align-self)</h2>
+    <p>
+      .block__row {<br />
+      display: flex; <br />
+      align-items: flex-start; } <br />
+      Мы всем элемента (block__column(всем трем)) внутри контейнера
+      (block__row-контейнер) даем свойство align-items: flex-start; (прижиматся
+      на верх) <br />
+      <br />
+      .block__column-3{ <br />
+      align-self: flex-end; } <br />
+      Мы же создали дополнительные классы для каждой колонки ((div)block__column
+      .block__column_1 (/div)) и вот мы обращаемся только к третьей колонке (к
+      третьему элементу) и даем свойство прижиматся вниз <br />
+      <br />
+      ЗАПОМНИ: align-items - применяется только контейнерам (внутри контейнера
+      есть элементы и они ко всем элементам применяются) <br />
+      align-self - применяется только элементам
+      <a href="https://youtu.be/uPYUgipiFcM?t=52"> video</a>
+    </p>
+    <div class="Thirdwrapper">
+      <div class="Thirdblock">
+        <div class="Thirdblock__row">
+          <div class="Thirdblock__column Thirdblock__column-1">
+            <div class="Thirdblock__item">1</div>
+          </div>
+          <div class="Thirdblock__column Thirdblock__column-2">
+            <div class="Thirdblock__item">
+              2 Lorem ipsum dolor sit,<br />dsfs
+            </div>
+          </div>
+          <div class="Thirdblock__column Thirdblock__column-3">
+            <div class="Thirdblock__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+
+    <h2>Пример 3: display: flex; (order)</h2>
+    <p>
+      .block__row {<br />
+      display: flex; } <br /><br />
+      .block__column-1{<br />
+      order: 3;<br />
+      }<br />
+      .block__column-2{<br />
+      order: 2;<br />
+      }<br />
+      .block__column-3{<br />
+      order: 1;<br />
+      }<br />
+      Поменяли местами! Каждой колонке дали значиние какое нужно! (по умолчанию у всех индекс 0)
+    </p>
+    <div class="Fourthwrapper">
+      <div class="Fourthblock">
+        <div class="Fourthblock__row">
+          <div class="Fourthblock__column Fourthblock__column-1">
+            <div class="Fourthblock__item">1</div>
+          </div>
+          <div class="Fourthblock__column Fourthblock__column-2">
+            <div class="Fourthblock__item">2</div>
+          </div>
+          <div class="Fourthblock__column Fourthblock__column-3">
+            <div class="Fourthblock__item">3</div>
+          </div>
+        </div>
+        <ul class="block__list">
+          <li><div class="block__info block__info_y">Flex контейнер</div></li>
+          <li><div class="block__info block__info_p">Flex элемент</div></li>
+          <li><div class="block__info block__info_g">Контент</div></li>
+        </ul>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+  </body>
+</html>

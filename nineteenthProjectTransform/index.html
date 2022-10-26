@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+	
+    <title>transform</title>
+  </head>
+  <body>
+    <h1>CSS Transform. Никак не влияет на окружение</h1>
+    <div class="container translate">
+      <div class="title">translate (x,y). <br> Сдвигает элемент, перемещая относительно изначального положения <br> transform: translate(x, y); </div>
+      <div class="row">
+        <div class=" translate1"></div>
+        <div class="box translate2"></div>
+      </div>
+      <br><br><br>
+      <div class="text-row">
+        <div class="text-row__1">box :hover { <br>
+          transform: translate(10px, 20px); <br>
+        } При наведении объект перемещается (грубо)</div>
+        <div class="text-row__2">.box {<br>
+          background-color: rgb(0, 255, 110);<br>
+          transition: all 1s ease 0s;<br>
+        }<br>
+        .box :hover {<br>
+          transform: translate(-10px, -20px );<br>
+        } Добавили анимацию (Дальше всем)</div>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="container scale">
+      <div class="title">scale (x,y). <br> Маштабирует элемент, делая их больше или меньше. <br> transform: scale (x, y);</div>
+      <div class="row">
+        <div class="box scale1"></div>
+        <div class="box scale2"></div>
+        <div class="box scale3"></div>
+        <div class="box scale4">Привет</div>
+      </div>
+      <br>
+      <div class="text-row">
+        <div class="text-row__1">box :hover { <br>
+          transform: scale(1, 2); <br>
+        } При наведении высота(у) объекта увеличивается вдвое<br> (1 - это ширина, по умолчанию- свой размер(150px). <br> 2 - ширина, увеличилась вдвое (300рх) )</div>
+        <div class="text-row__2">.box:hover {<br>
+          transform: scale(1, 0.5);<br>}<br>
+          Высота уменьшается вдвое <br> (0,5 - это высота, было 150рх стало 75 рх)<br> 
+        </div>
+        <div class="text-row__3">
+          .scale3:hover { <br>
+            transform: scale(0.5, 0.5); <br>
+          } Равномерно уменьшается по высоте и ширине
+        </div>
+        <div class="text-row__4">
+          .scale4:hover { <br>
+            transform: scale(-1, 1); <br>
+          }  Отрицательное значение,<br> зеркальное отображение (по горизонтале)
+        </div>
+      </div>
+    </div>
+
+
+    <br><br><br>
+
+    <div class="container rotate">
+      <div class="title">rotate (угол+deg). <br> Поворачивает элементы на заданное количество градусов <br> (положительное число поворачивает по часовой стрелке, отрицательное против часовой) <br> transform: rotate (угол+deg);</div>
+      <div class="row">
+        <div class="box rotate1">Привет</div>
+        <div class="box rotate2">Привет</div>
+        <div class="box rotate3">Привет</div>
+        <div class="box rotate4">Привет</div>
+        <div class="box rotate5">Привет</div>
+      </div>
+      <br>
+      <div class="text-row">
+        <div class="text-row__1">box :hover { <br>
+          transform: rotate(45deg); <br> }
+          </div>
+        <div class="text-row__2">.box:hover {<br>
+          transform: rotate(-45deg); <br> }
+        </div>
+        <div class="text-row__3">
+          box:hover {<br>
+            transform: rotate(90deg);   <br> }
+        </div>
+        <div class="text-row__4">
+          box:hover {<br>
+            transform: rotate(180deg);   <br> }
+        </div>
+        <div class="text-row__5">
+          box:hover {<br>
+            transform: rotate(-360deg);   <br> }
+        </div>
+      </div>
+    </div>
+
+
+
+    <br><br><br>
+
+    <div class="container skew">
+      <div class="title">skew (x-угол+deg, y-угол+deg). <br>Деформирует (искажает) стороны объекта <br>  transform: skew (x-угол+deg, y-угол+deg);</div>
+      <div class="row">
+        <div class="box skew1">Привет</div>
+        <div class="box skew2">Привет</div>
+        <div class="box skew3">Привет</div>
+        <div class="box skew4">Привет</div>
+        <div class="box skew5">Привет</div>
+      </div>
+      <br>
+      <div class="text-row">
+        <div class="text-row__1">box { <br>
+          transform: skew(0deg, 0deg); <br> } По умолчанию
+          </div>
+        <div class="text-row__2">.box {<br>
+          transform: skew(10deg, 0deg); <br> }
+        </div>
+        <div class="text-row__3">
+          box {<br>
+            transform: skew(0deg ,10deg);   <br> }
+        </div>
+        <div class="text-row__4">
+          box {<br>
+            transform: skew(30deg ,10deg);   <br> }
+        </div>
+        <div class="text-row__5">
+          box:hover {<br>
+            transform: skew(30deg ,10deg);   <br> } При наведении
+        </div>
+      </div>
+    </div>
+
+    <br> <br><br><br><br><br>
+    
+    <div class="container matrix">
+      <div class="title">transform: matrix(a,c,b,d,x,y); - <br> Позволяет объединять несколько функций 
+        <a href="https://youtu.be/uQEGUpsnqsw?t=744">VIDEO</a>
+      </div>
+     
+    </div>
+
+
+
+
+
+    <br><br><br><br><br>
+    <div class="container combination">
+      <div class="title">Комбинация <br> Записать несколько значений в одно свойство transform</div>
+      <div class="row">
+        <div class="box combination1">Привет</div>
+        <div class="box combination2">Привет</div>
+        <div class="box combination3">Привет</div>
+      </div>
+      <br>
+      <div class="text-row">
+        <div class="text-row__1">box :hover { <br>
+          transform: translate(0, 50px) scale(2, 1);<br> }
+          </div>
+        <div class="text-row__2">.box:hover {<br>
+          transform: translate(0, 50px) scale(2, 1) rotate(45deg); <br> }
+        </div>
+        <div class="text-row__3">
+          box:hover {<br>
+            transform: translate(50px) scale(0.5) rotate(45deg);  <br> }
+        </div>
+       
+      </div>
+    </div>
+
+
+    <br><br><br><br><br>
+    <div class="container transform-origin">
+      <div class="title">transform-origin<br> Позволяет сместить центр трансформации</div>
+      <div class="row">
+        <div class="box transform-origin1">Привет</div>
+        <div class="box transform-origin2">Привет</div>
+        <div class="box transform-origin3">Привет</div>
+      </div>
+      <br>
+      <div class="text-row">
+        <div class="text-row__1">box  { <br>
+          transform-origin: center;<br> } По умолчанию, "гвоздь прибит к центру элемента"<br><br>
+          box :hover { <br>
+          transform:  rotate(45deg);<br> }
+          </div>
+        <div class="text-row__2">box  { <br>
+          transform-origin: top left;<br> } "гвоздь прибит к верхнему левому углу"<br><br>
+          box :hover { <br>
+          transform:  rotate(45deg);<br> }
+        </div>
+        <div class="text-row__3">
+          box  { <br>
+            transform-origin: top right;<br> } По умолчанию, "гвоздь прибит к центру элемента"<br><br>
+            box :hover { <br>
+            transform:  rotate(45deg);<br> }
+        </div>
+       
+      </div>
+    </div>
+  </body>
+</html>

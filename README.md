@@ -8,6 +8,8 @@
 
 [id](https://TestName2022.github.io/id/ "id-Якоря") -  якоря
 
+[form](https://TestName2022.github.io/form/ "form") -  input; select; button; label; fieldset;
+
 # CSS
 
 [styleForText](https://TestName2022.github.io/styleForText/ "styleForText") - Стили для текста и шрифта

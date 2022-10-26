@@ -1,0 +1,528 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*--------------------*/
+body {
+  padding: 50px 0px  50px 5px;
+}
+body > * {
+  
+  margin-top: 30px;
+}
+.center {
+  text-align: center;
+  font-size: 18px;
+  padding: 0px 220px;
+}
+.exemple {
+  display: flex;
+}
+h2 {
+  margin: 30px 30px 5px;
+}
+
+.null {
+  padding-left: 100px;
+  margin-bottom: -30px;
+  font-size: 18px;
+  margin-top: -30px;
+}
+span {
+  background-color: rgb(203, 0, 0);
+  padding: 0px 5px;
+}
+.cursive {
+  background-color: rgb(238, 203, 203);
+
+  font-weight: 600;
+}
+
+.important {
+  background-color: rgba(22, 7, 233, 0.172);
+  color: rgb(233, 11, 11);
+  line-height: -1px;
+}
+.row{
+  display: flex;
+  align-items: flex-start;
+}
+.button__original{
+  align-self: start;
+  flex: 0 0 auto;
+ 
+}
+/*----------------original--------------------*/
+.button__original {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #5e5373;
+  box-shadow: 0 5px 0px #3c354a;
+  position: relative;
+  top: 0;
+}
+
+.button__original a {
+  display: block;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 24px;
+  color: white;
+}
+
+.button__original:hover {
+  top: 2px;
+  background-color: #18b5a4;
+  box-shadow: 0 3px 0px #3c354a;
+}
+/*----------------first-exemple--------------------*/
+.button__first-exemple {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #5e5373;
+  box-shadow: 0 5px 0px #3c354a;
+  position: relative;
+  top: 0;
+  transition-duration: 0.5s;
+}
+
+.button__first-exemple a {
+  display: block;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 24px;
+  color: white;
+}
+
+.button__first-exemple:hover {
+  top: 2px;
+  background-color: #18b5a4;
+  box-shadow: 0 3px 0px #3c354a;
+}
+
+/*--------------------*/
+.button__first-exemple1 {
+  margin: 0px 30px;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #5e5373;
+  box-shadow: 0 5px 0px #3c354a;
+  position: relative;
+  top: 0;
+  transition-duration: 1s;
+}
+
+.button__first-exemple1 a {
+  display: block;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 24px;
+  color: white;
+}
+
+.button__first-exemple1:hover {
+  top: 2px;
+  background-color: #18b5a4;
+  box-shadow: 0 3px 0px #3c354a;
+}
+
+/*--------------------*/
+.button__first-exemple2 {
+  margin: 0px 30px;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #5e5373;
+  box-shadow: 0 5px 0px #3c354a;
+  position: relative;
+  top: 0;
+  transition-duration: 2s;
+}
+
+.button__first-exemple2 a {
+  display: block;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 24px;
+  color: white;
+}
+
+.button__first-exemple2:hover {
+  top: 2px;
+  background-color: #18b5a4;
+  box-shadow: 0 3px 0px #3c354a;
+}
+
+/*----------------second-exemple--------------------*/
+
+.button__second-exemple {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #5e5373;
+  box-shadow: 0 5px 0px #3c354a;
+  position: relative;
+  top: 0;
+  transition-duration: 0.5s;
+  transition-property: all;
+}
+
+.button__second-exemple a {
+  display: block;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 18px;
+  color: white;
+}
+
+.button__second-exemple:hover {
+  top: 2px;
+  background-color: #18b5a4;
+  box-shadow: 0 3px 0px #3c354a;
+}
+.button__second-exemple2:last-child {
+  margin-left: 0px;
+}
+/*--------------------*/
+.button__second-exemple1 {
+  margin: 0px 30px;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #5e5373;
+  box-shadow: 0 5px 0px #3c354a;
+  position: relative;
+  top: 0;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+}
+
+.button__second-exemple1 a {
+  display: block;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: white;
+}
+
+.button__second-exemple1:hover {
+  top: 2px;
+  background-color: #18b5a4;
+  box-shadow: 0 3px 0px #3c354a;
+}
+
+/*--------------------*/
+.button__second-exemple2 {
+  margin: 0px 30px;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #5e5373;
+  box-shadow: 0 5px 0px #3c354a;
+  position: relative;
+  top: 0;
+  transition-duration: 0.5s;
+  transition-property: background-color, top;
+}
+
+.button__second-exemple2 a {
+  display: block;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: white;
+}
+
+.button__second-exemple2:hover {
+  top: 2px;
+  background-color: #18b5a4;
+  box-shadow: 0 3px 0px #3c354a;
+}
+/*--------------------*/
+.button__second-exemple3 {
+  margin: 0px 30px;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #5e5373;
+  box-shadow: 0 5px 0px #3c354a;
+  position: relative;
+  top: 0;
+  transition-duration: 0.5s, 2s;
+  transition-property: background-color, top;
+}
+
+.button__second-exemple3 a {
+  display: block;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: white;
+}
+
+.button__second-exemple3:hover {
+  top: 2px;
+  background-color: #18b5a4;
+  box-shadow: 0 3px 0px #3c354a;
+}
+
+/*----------------third-exemple--------------------*/
+.button__third-exemple {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #5e5373;
+  box-shadow: 0 5px 0px #3c354a;
+  position: relative;
+  top: 0;
+  transition-duration: 0.5s;
+  transition-property: all;
+  transition-delay: 0s;
+}
+
+.button__third-exemple a {
+  display: block;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 24px;
+  color: white;
+}
+
+.button__third-exemple:hover {
+  top: 2px;
+  background-color: #18b5a4;
+  box-shadow: 0 3px 0px #3c354a;
+}
+
+/*--------------------*/
+.button__third-exemple1 {
+  margin: 0px 30px;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #5e5373;
+  box-shadow: 0 5px 0px #3c354a;
+  position: relative;
+  top: 0;
+  transition-duration: 0.5s;
+  transition-property: all;
+  transition-delay: 2s;
+}
+
+.button__third-exemple1 a {
+  display: block;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 24px;
+  color: white;
+}
+
+.button__third-exemple1:hover {
+  top: 2px;
+  background-color: #18b5a4;
+  box-shadow: 0 3px 0px #3c354a;
+}
+
+/*--------------------*/
+.button__third-exemple2 {
+  margin: 0px 30px;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #5e5373;
+  box-shadow: 0 5px 0px #3c354a;
+  position: relative;
+  top: 0;
+  transition-duration: 0.5s, 0.1s, 0.1s;
+  transition-property: background-color, top, box-shadow;
+  transition-delay: 0s, 1s, 3s;
+}
+
+.button__third-exemple2 a {
+  display: block;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 24px;
+  color: white;
+}
+
+.button__third-exemple2:hover {
+  top: 2px;
+  background-color: #18b5a4;
+  box-shadow: 0 3px 0px #3c354a;
+}
+
+/*----------------fourth-exemple--------------------*/
+.button__fourth-exemple {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #5e5373;
+  box-shadow: 0 5px 0px #3c354a;
+  transition-duration: 5s;
+  transition-timing-function: ease;
+}
+
+.button__fourth-exemple a {
+  display: block;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 24px;
+  color: white;
+}
+
+.button__fourth-exemple:hover {
+  background-color: #18b5a4;
+}
+
+/*--------------------*/
+.button__fourth-exemple1 {
+  margin: 0px 30px;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #5e5373;
+  box-shadow: 0 5px 0px #3c354a;
+  transition-duration: 5s;
+  transition-timing-function: linear;
+}
+
+.button__fourth-exemple1 a {
+  display: block;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 24px;
+  color: white;
+}
+
+.button__fourth-exemple1:hover {
+  background-color: #18b5a4;
+}
+
+/*--------------------*/
+.button__fourth-exemple2 {
+  margin: 0px 30px;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #5e5373;
+  box-shadow: 0 5px 0px #3c354a;
+  transition-duration: 5s;
+  transition-timing-function: steps(4,start);
+}
+
+.button__fourth-exemple2 a {
+  display: block;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 24px;
+  color: white;
+}
+
+.button__fourth-exemple2:hover {
+  background-color: #18b5a4;
+}
+
+
+/* тест кнопка */
+.test-button{
+  display: inline-block;
+  background-color: rgb(120, 31, 31);
+  border-radius: 20px;
+  box-shadow: 0 5px 0px  rgb(63, 16, 16);
+  position: relative;
+  top: 0;
+  transition: all 100ms linear 0s;
+}
+.test-button a{
+  display: block;
+  font-size: 24px;
+  color: black;
+  padding: 10px 30px;
+}
+
+.test-button:hover{
+  top: 2px;
+  background-color: rgb(243, 61, 61);
+  box-shadow: 0 3px 0px  rgb(63, 16, 16);
+  color: white;
+}
+

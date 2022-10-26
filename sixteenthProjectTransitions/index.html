@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>transition</title>
+  </head>
+  <body>
+    <p class="null">Оригинал</p>
+    <br>
+    <div class="row">
+       <div class="button__original">
+          <a href="#">Большая кнопка</a>
+       </div>
+       <div class="html">
+        <h2>HTML</h2> <pre>
+  <i><</i> div class="button__original">
+        <i><</i>a href="#">Большая кнопка<i><</i>/a>
+  <i><</i>/ div>      
+        </pre>
+       </div>
+       <div class="css">
+        <pre>
+    .button__original {
+      display: inline-block;
+      border-radius: 10px;
+      background-color: #5e5373;
+      box-shadow: 0 5px 0px #3c354a;
+      position: relative;
+      top: 0;
+    }
+        </pre>
+       </div>
+       <div class="css">
+        <pre>
+    .button__original a{
+      display: block;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 24px;
+      color: white;
+    }
+        </pre>
+       </div>
+       <div class="css">
+        <pre>
+    .button__original:hover {
+      top: 2px;
+      background-color: #18b5a4;
+      box-shadow: 0 3px 0px #3c354a;
+    }
+        </pre>
+       </div>
+    </div>
+   
+    <hr color="black" size="5">
+    <div>
+      <p class="center"><span>transition-duration </span>  <br>(Определяет промежуток времени в течении которого будет происходить переход (из одного значение в другое - анимироваться) )</p>
+      <div class="exemple">
+        <div>
+          <h2>transition-duration: 0.5s;</h2>
+          <div class="button__first-exemple">
+            <a href="#">Большая кнопка</a>
+          </div>
+        </div>
+        <div>
+          <h2>transition-duration: 1s; (по умолчанию)</h2>
+          <div class="button__first-exemple1">
+            <a href="#">Большая кнопка</a>
+          </div>
+        </div>
+        <div>
+          <h2>transition-duration: 2s;</h2>
+          <div class="button__first-exemple2">
+            <a href="#">Большая кнопка</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br> <br> <br>
+    <hr color="black" size="5">
+    <div>
+      <p class="center"><span>transition-property </span>  <br> (Содержит название css свойств которым будет применён эффект перехода (анимирование) ) </p>
+      <div class="exemple">
+        <div>
+          <h2>transition-duration: 0.5s; <br>
+            transition-property: all; (по умолчанию) <br>
+        <span class="cursive">(все свойства анимируются)</span>  
+          </h2>
+          <div class="button__second-exemple">
+            <a href="#">Большая кнопка</a>
+          </div>
+        </div>
+        <div>
+          <h2>transition-duration: 0.5s; <br>
+            transition-property: background-color; <br>
+            <span class="cursive"> (только свойство background-color анимируется)</span>  
+          </h2>
+          <div class="button__second-exemple1">
+            <a href="#">Большая кнопка</a>
+          </div>
+        </div>
+        <div>
+          <h2>transition-duration: 0.5s; <br>
+            transition-property: background-color, top;<br>
+            <span class="cursive">(только background-color и tор анимируются)</span>    
+          </h2>
+          <div class="button__second-exemple2">
+            <a href="#">Большая кнопка</a>
+          </div>
+        </div>
+
+        <div>
+          <h2>transition-duration: 0.5s, 2s; <br>
+            transition-property: background-color, top; <br>
+            <span class="cursive important">(мы задаем время каждому свойству отдельно )</span>    
+          </h2>
+          <div class="button__second-exemple3">
+            <a href="#">Кнопка</a>
+          </div>
+        </div>
+        
+      </div>
+    </div> <br>
+    <hr color="black" size="5">
+    <br> <br>
+    <div>
+      <p class="center"><span>transition-delay</span><br> (Это задержка выполнения перехода (анимирование) - пользволяет сделать так чтобы изменеие свойства происходило не моментально, а с задержкой (время задержки мы указываем) )  <br></p>
+      <div class="exemple">
+        <div>
+          <h2>transition-duration: 0.5s; <br>
+            transition-property: all; <br>
+            transition-delay: 0s; (по умолчанию)<br> <br>
+          <span class="cursive">(без задержки)</span>  
+          </h2><br>
+          <div class="button__third-exemple">
+            <a href="#">Большая кнопка</a>
+          </div>
+        </div>
+        <div>
+          <h2> transition-duration: 0.5s;<br>
+            transition-property: all; <br>
+            transition-delay: 2s;<br> <br>
+            <span class="cursive"> (задержка на 2s после того как мы подвели курсос<br> и убрали курсос тоже 2s задержки)</span>  
+          </h2> 
+          <div class="button__third-exemple1">
+            <a href="#">Большая кнопка</a>
+          </div>
+        </div>
+        <div> 
+          <h2>transition-duration: 0.5s, 0.1s, 0.1s; <br>
+            transition-property:  background-color, top, box-shadow; <br>
+            transition-delay: 0s, 1s, 3s; <br>
+            <span class="cursive">(0s для background-color - нет задержки, <br> 1s задержка для top, <br> 3s задержка для box-shadow )</span>
+          </h2>
+          <div class="button__third-exemple2">
+            <a href="#">Большая кнопка</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br><br><br>
+    <hr color="black" size="5"><br><br><br>
+    <div>
+      <p class="center"><span>transition-timing-function</span>  <br>(Задаёт стиль нашего перехода, то есть некий сценарий, по которому будет осуществятся анимация.)</p>
+      <div class="exemple">
+        <div>
+          <h2> transition-duration: 5s; <br>
+            transition-timing-function: ease;(по умолчанию) <br> <br>
+            <span class="cursive">Переход цвета начинается медленно, <br> разгоняется быстро и замедляется в конце</span>  
+          </h2>
+          <div class="button__fourth-exemple">
+            <a href="#">Большая кнопка</a>
+          </div>
+        </div>
+        <div>
+          <h2> transition-duration: 5s; <br>
+            transition-timing-function: linear; <br> <br>
+            <span class="cursive">Переход цвета происходит равномерно на протяжении <br> всего времени, без колебаний в скорости.</span>  </h2>
+          <div class="button__fourth-exemple1">
+            <a href="#">Большая кнопка</a>
+          </div>
+        </div>
+        <div>
+          <h2>  transition-duration: 5s; <br>
+            transition-timing-function: steps(4,start);<br> <br>
+            <span class="cursive">Временная функция позволяет разбить анимацию <br> на чёткое количество шагов указанных</span>  </h2>
+          <div class="button__fourth-exemple2">
+            <a href="#">Большая кнопка</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <br><br><br><br><br><br><br>
+    <hr size="5" color="black"><br><br><br><br>
+    <h2 style="text-align: center; color:red; font-size: 20px;">Универсальное свойство <br>transition</h2>
+    <p>
+      transition: transition-property transition-duration transition-timing-function transition-delay;
+    </p>
+    <div class="test-button">
+      <a href="#">Кнопка</a>
+    </div>
+    <pre>
+      .test-button{
+        display: inline-block;
+        background-color: rgb(120, 31, 31);
+        border-radius: 20px;
+        box-shadow: 0 5px 0px  rgb(63, 16, 16);
+        position: relative;
+        top: 0;
+       <span>transition: all 100ms linear 0s;</span> 
+      }
+      .test-button a{
+        display: block;
+        font-size: 24px;
+        color: black;
+        padding: 10px 30px;
+      }
+      
+      .test-button:hover{
+        top: 2px;
+        background-color: rgb(243, 61, 61);
+        box-shadow: 0 3px 0px  rgb(63, 16, 16);
+        color: white;
+      }
+    </pre>
+    <br><br><br>
+  </body>
+</html>

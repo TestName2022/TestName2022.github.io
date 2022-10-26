@@ -35,6 +35,16 @@
 
 [flex](https://TestName2022.github.io/flex-shrinkForRow/ "flex") - flex-basis (размер) / flex-grow (заполнение контейнера - по ум. 0 - нельзя заполнять) / flex-shrink (изменение размера - по ум. 1 - можно изменять)
 
+## Анимация
+
+#### transition
+
+[transition](https://TestName2022.github.io/sixteenthProjectTransitions/ "transition") - transition-duration; transition-property; transition-delay; transition-timing-function;
+
+[transition_button](https://TestName2022.github.io/sixteenth2Project/ "transition-button") - разница куда писать transition!!!
+
+[transition-timing-function](https://TestName2022.github.io/sixteenth3Project/ "transition-timing-function") - по другому кнопка создана и езда кнопки
+
 
 ## background
 

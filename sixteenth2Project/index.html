@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Куда именно пишем transition</title>
+  </head>
+  <body>
+    <div class="button">
+      <a href="#">Кнопка</a>
+    </div>
+    <div class="button2">
+      <a href="#">Кнопка</a>
+    </div>
+    <br><br>
+    <span>
+      .button { <br>
+        display: inline-block; <br>
+        background-color: rgb(255, 0, 0); <br>
+        border-radius: 50%; <br>
+        box-shadow: 0 8px 0 rgb(164, 0, 0); <br>
+        position: relative; <br>
+        top: 0; <br>
+      } <br> <br>
+      
+      .button a { <br> 
+        display: block; <br>
+        color: white; <br>
+        font-size: 24px; <br>
+        font-weight: 800; <br>
+        padding: 50px 30px; <br>
+      } <br> <br>
+      
+      .button:active { <br>
+        top: 2px; <br>
+        box-shadow: 0 3px 0 rgb(164, 0, 0); <br>
+      } <br> <br>
+      (Создаем кнопку, без анимации ) <br>
+      (Зажимаем кнопку и удерживаем)
+    </span>
+<br> <br>
+    <div class="bu2tton">
+      .button { <br>
+        display: inline-block; <br>
+        background-color: rgb(255, 0, 0); <br>
+        border-radius: 50%; <br>
+        box-shadow: 0 8px 0 rgb(164, 0, 0); <br>
+        position: relative; <br>
+        top: 0; <br>
+     <span class="red">transition-duration: 0.1s; </span><br>   
+      } <br> <br>
+      
+      .button a { <br> 
+        display: block; <br>
+        color: white; <br>
+        font-size: 24px; <br>
+        font-weight: 800; <br>
+        padding: 50px 30px; <br>
+      } <br> <br>
+      
+      .button:active { <br>
+     <span class="red">transition-duration: 0.5s; </span><br>   
+        top: 2px; <br>
+        box-shadow: 0 3px 0 rgb(164, 0, 0); <br>
+      } <br> <br>
+      (Когда мы нажимаем на кнопку, срабатывает - 0,5s <br>
+      когда отпускаем - кнопка быстро вожражается - 0,1s ) <br>
+      Плавно нажимается и быстро возращается<br>
+      Мы регулируем при зажатии кнопки и когда кнопку отпускаем 
+    </div>
+
+
+<div class="bu3tton">
+    <div class="button3">
+      <a href="#">Кнопка</a>
+    </div>
+    <br><br>
+    <span> .button { <br>
+      display: inline-block; <br>
+      background-color: rgb(255, 0, 0); <br>
+      border-radius: 50%; <br>
+      box-shadow: 0 8px 0 rgb(164, 0, 0); <br>
+      position: relative; <br>
+      top: 0; <br>
+   <span class="red">transition-duration: 1s; </span><br>   
+    } <br> <br>
+    
+    .button a { <br> 
+      display: block; <br>
+      color: white; <br>
+      font-size: 24px; <br>
+      font-weight: 800; <br>
+      padding: 50px 30px; <br>
+    } <br> <br>
+    
+    .button:active { <br>
+   <span class="red">transition-duration: 0.5s; </span><br>   
+      top: 2px; <br>
+      box-shadow: 0 3px 0 rgb(164, 0, 0); <br>
+    } <br> <br>
+    (Когда мы нажимаем на кнопку, срабатывает - 0,5s <br>
+    когда отпускаем - кнопка быстро вожражается - 1s ) <br>
+   Плавно нажимается и медлено возращается<br>
+    Мы регулируем при зажатии кнопки и когда кнопку отпускаем </span>
+
+</div>
+
+<br><br><br><br><br>
+<hr size="5" color="black">
+
+  <div class="test_row">
+    <div class="test__buttons first">
+      <a href="#">Кнопка</a>
+    </div>
+    <div class="test__buttons second">
+      <a href="#">Кнопка</a>
+    </div>
+  </div>
+  <div class="test_row">
+    <p>если только кнопке дать, то анимировать будет всё <br>
+    (с помощью наведения)</p>
+    <p>если только hover дать, то только когда наводим <br> когда убираем нет анимации</p>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br>
+  </body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="general">
+      <h2>Пример 1</h2>
+      <p>
+        Тег <span class="span-blue">input</span> принимаем данные пользователя,
+        атрибут <span class="span-green">type</span> это каким методом примем
+        данные равно <span class="span-red"> "text" </span>(любой текст),<br /><span
+          class="span-red"
+          >"tel"
+        </span>
+        (цифрами) в мобильном устройстве автомотически переключит на цифры для
+        ввода. <br />
+        Атрубт <span class="span-green">name</span> , каждому атрибуту type
+        должно быть индивидуальное имя <br /> </p>
+        <pre>                                    <span class="bg"><i><</i>input type="text" name="userName" value=""<i>></i></span>                                                    <span class="bg"><i><</i>input type="tel" name="userTel" value=""<i>></i></span> </pre>
+     
+      <div class="row">
+        <div><input type="text" name="userName" value="" /></div>
+        <div><input type="tel" name="userTel" value="" /></div>
+      </div>
+
+      <p class="border">
+        Атрибут <span class="span-green">value</span>  обычно оставляют пустым, если туда что-то вписать то
+        получиться(смотри пример) <br />
+        <span class="bg"><i><</i>input type="text" name="userName2" value="altintop"<i>></i></span> <br> <br> <input type="text" name="userName2" value="altintop" />
+        <br>  <br></p>
+     <br>
+
+      <p class="border">
+        атрибут <span class="span-green">placeholder</span>  задает подпись поля, поясняем пользователю, что это
+        за поле
+        <br />
+        <span class="bg"><i><</i>input  type="text" name="uName" value="" placeholder="введите имя"<i>></i></span> <br><br><input placeholder="введите имя" type="text" name="uName" value="" />
+        <br> <br> </p>
+      
+<br>
+      <p class="border">
+        атрибут <span class="span-green">disabled</span> блокирует ввод. можно применят ко всем!!!
+        заблокированые поле не передаются на сервер<br />
+        <span class="bg"><i><</i> input  type="text" name="uName"
+        value=""  placeholder="челси чемпион" disabled<i>></i></span> <br><br> <input
+        disabled
+        placeholder="челси чемпион"
+        type="text"
+        name="uName"
+        value=""
+      />
+      <br> <br> </p><br>
+
+      <div class="border">
+        <p>атрибут <span class="span-green">required</span> - Поле обязательна для ввода</p>
+        <p>атрибут <span class="span-green">autofocus</span> - Сразу поле выделяется и можно заполнять</p>
+        <br>
+        <span class="bg"><i><</i> input  type="text" name="user-name" required autofocus
+         <i>></i></span> <br><br>
+        <input type="text" name="user-name" required autofocus>
+
+      </div>
+
+
+<br>
+      <p  class="border">
+      Атрибут <span class="span-green">type</span> равен <span class="span-red">password</span>  для ввода паролей <br />
+      <span class="bg"><i><</i>input type="password"
+      name="enterPasswordUser" value=""<i>></i></span> <br><br><input type="password" name="enterPasswordUser" value="" /><br> <br> 
+    </p>
+    
+    </div>
+    <!---->
+<br><br>
+   
+
+   
+<div class="general">
+    <h2>Пример 2: атрибут <span class="span-green">type</span> равно <span class="span-red">radio</span>  (переключатель, выбор -  ТОЛЬКО ОДИН ВЫБОР)</h2>
+    <div class="border">
+      Атрибут name - должен быть одинаковый!!! - узнать насчет атрибута value <br />
+      <pre>
+        <span class="bg"><i><</i><i>p></i><i><</i>input type="radio" name="userRadioMovie">Помни<i><</i><i>/p></i></span> 
+        <i><</i><i>p></i><i><</i>input type="radio" name="userRadioMovie">Престиж<i><</i><i>/p></i>
+        <span class="bg"><i><</i><i>p></i><i><</i>input type="radio" name="userRadioMovie">Начало<i><</i><i>/p></i></span> 
+        <i><</i><i>p></i><i><</i>input type="radio" name="userRadioMovie">Довод<i><</i><i>/p></i>
+        <span class="bg"><i><</i><i>p></i><i><</i>input type="radio" name="userRadioMovie">Темный рыцарь<i><</i><i>/p></i></span>
+      </pre>
+      <div>
+        <h3>Выбери любимый фильм</h3>
+        <p><input type="radio" name="userRadioMovie" value="remember" />Помни</p>
+        <!--value, разницу не вижу-->
+        <p><input type="radio" name="userRadioMovie" value="" />Престиж</p>
+        <p><input type="radio" name="userRadioMovie" value="" />Начало</p>
+        <p><input type="radio" name="userRadioMovie" value="" />Довод</p>
+        <p><input type="radio" name="userRadioMovie" value="" />Темный рыцарь</p>
+      </div> 
+    </div>
+    
+    <div class="border" >
+        <p>Атрибут <span class="span-green">checked</span> сразу отмечено<br />
+        <span class="bg"><i><</i><i>p></i><i><</i>input type="radio" name="userFootball" checked> Челси<i><</i><i>/p></i></span></p>
+  
+      <h3>Выбери любимый клуб</h3>
+      <p><input type="radio" name="userFootball" value="" />Арсенал</p>
+      <p><input checked type="radio" name="userFootball" value="" />Челси</p>
+
+      <p><input type="radio" name="userFootball" value="" />Барселона</p>
+      <p><input type="radio" name="userFootball" value="" />Манчестер сити</p>
+    </div>
+</div>
+<br><br>
+
+  <div class="general">
+    <h2>Пример 3: атрибут <span class="span-green">type</span>  равно  <span class="span-red">checkbox </span>(НЕСКОЛЬКО ВЫБОРОВ ОДНОВРЕМЕННО)</h2>
+      <div class="border">
+        Атрибут name - должно быть разные имена!!!
+    <pre>
+      <span class="bg"><i><</i><i>p></i><i><</i>input type="checkbox" name="auto" value="yes">BMW<i><</i><i>/p></i></span> 
+      <i><</i><i>p></i><i><</i>input type="checkbox" name="auto" value="yes">Audi<i><</i><i>/p></i> 
+      <span class="bg"><i><</i><i>p></i><i><</i>input type="checkbox" name="auto" value="yes">Ford<i><</i><i>/p></i></span> 
+      <i><</i><i>p></i><i><</i>input type="checkbox" name="auto" value="yes">Hyundai<i><</i><i>/p></i> 
+      <span class="bg"><i><</i><i>p></i><i><</i>input type="checkbox" name="auto" value="yes">Mercedes<i><</i><i>/p></i></span> 
+    </pre>
+        <div>
+        <p><input type="checkbox" name="auto" value="yes" />BMW</p>
+        <p><input type="checkbox" name="auto" value="yes" />Audi</p>
+        <p><input type="checkbox" name="auto" value="yes" />Ford</p>
+    
+        <p><input type="checkbox" name="auto" value="yes" />Hyundai</p>
+        <p><input type="checkbox" name="auto" value="yes" />Mercedes</p>
+      </div>
+      </div>
+    <div class="border">
+      <p>Атрибут <span class="span-green">checked</span> сразу отмечено<br />
+      <pre>
+        <span class="bg"><i><</i><i>p></i><i><</i>input type="checkbox" name="auto" value="yes" checked>BMW<i><</i><i>/p></i></span>  
+        <i><</i><i>p></i><i><</i>input type="checkbox" name="auto" value="yes" checked>Hyundai<i><</i><i>/p></i> 
+ 
+      </pre>
+      <div>
+        <p><input type="checkbox" name="auto" value="yes" checked/>BMW</p>
+        <p><input type="checkbox" name="auto" value="yes" />Audi</p>
+        <p><input type="checkbox" name="auto" value="yes" />Ford</p>
+    
+        <p><input type="checkbox" name="auto" value="yes" checked/>Hyundai</p>
+        <p><input type="checkbox" name="auto" value="yes" />Mercedes</p>
+      </div>
+    </div>
+  </div>
+    <br><br>
+  <div class="general"> 
+    <h2>Пример 4: атрибут <span class="span-green">type</span>  равно <span class="span-red">file</span> </h2>
+      <p class="border"> 
+        <br>
+        <span class="bg"><i><</i><i>p></i><i><</i>input type="file" name="foto"><i><</i><i>/p></i></span> <br>
+        - атрибут value не нужен <br><br> <input type="file" name="foto" />
+      <br><br></p>
+
+        <p class="border"> <br>
+атрибут <span class="span-green">multiple</span> - несколько файлов можно загрузить <br>
+          <span class="bg"><i><</i><i>p></i><i><</i>input type="file" name="foto" multiple><i><</i><i>/p></i></span> <br>
+          - атрибут value не нужен <br><br> <input type="file" name="foto" multiple /> <br><br></p>
+    
+      
+  </div>
+<br><br>
+  <div class="general "> 
+    <h2>Пример 5: тег <span class="span-blue">textarea</span> - для многострочного текста (строчный тег)</h2>
+    <div class="row"> 
+        <div class="">  
+          <span class="bg"><i><</i><i>p></i><i><</i>textarea name="comment" cols="30" rows="10"><i><</i><i>/p></i></span> <br><br>
+                        <textarea name="comment" cols="30" rows="10"></textarea>
+        </div>
+    <div class=""><p>можно убрать атрибты размера, размер<br>ставиться в css и js <br>
+      <span class="bg"><i><</i><i>p></i><i><</i> textarea name="comment"><i><</i><i>/p></i></span> 
+    
+      
+    </p><textarea name="textmini"></textarea></div>
+
+    <div class=""><p>  атрибут placeholder задает подпись поля, поясняем пользователю, что это за поле
+      <br>
+      <span class="bg"><i><</i><i>p></i><i><</i> textarea name="comment" placeholder="введите коментарий"><i><</i><i>/p></i></span> <br></p>
+    <textarea placeholder="введите коментарий" name="textComent"></textarea></div></div>
+  
+  </div>
+ <br />
+    <br />
+    <div class="general">
+    <h2>Пример 6: союзные теги.<span class="span-blue">select</span> и <span class="span-blue">opition</span> (Выпадающий список)</h2>
+
+    <p>Тег <span class="span-blue">select</span>  это коробка. Тег <span class="span-blue">opition</span>   это пункты списка</p>
+    <div class="border">
+      <pre>
+<span class="bg"><i><</i><i>select</i> name="color">
+      <i><</i><i>option value="red"></i><i></i> красный <i><</i><i>/option></i>
+      <i><</i><i>option value="blue"></i><i></i> синий <i><</i><i>/option></i>
+      <i><</i><i>option value="black"></i><i></i> черный <i><</i><i>/option></i>
+      <i><</i><i>option value="white"></i><i></i> белый <i><</i><i>/option></i>
+<i><</i><i>/select></i></span>
+      </pre>
+    <select name="color">
+      <!--select multiple name="color". атрибут multiple можно выбрать несколько цветов с зажатием ctrl-->
+      <option value="red">красный</option>
+      <option value="blue">синий</option>
+      <option value="black">черный</option>
+      <!--атрибут seleccted по умолчанию будет выбран-->
+      <option value="white">белый</option>
+    </select>
+
+  </div> 
+  <div class="border"> 
+    <p>атрибут <span class="span-green"> seleccted </span>по умолчанию будет выбран</p> <pre>
+    <span class="bg"><i><</i><i>select</i> name="color">
+          <i><</i><i>option value="red"></i><i></i> красный <i><</i><i>/option></i>
+          <i><</i><i>option value="blue"></i><i></i> синий <i><</i><i>/option></i>
+          <i><</i><i>option value="black" selected></i><i></i> черный <i><</i><i>/option></i>
+          <i><</i><i>option value="white"></i><i></i> белый <i><</i><i>/option></i>
+    <i><</i><i>/select></i></span>
+          </pre>
+  <select name="color">
+    <!--select multiple name="color". атрибут multiple можно выбрать несколько цветов с зажатием ctrl-->
+    <option value="red">красный</option>
+    <option value="blue">синий</option>
+    <option selected value="black">черный</option>
+    <!--атрибут seleccted по умолчанию будет выбран-->
+    <option value="white">белый</option>
+  </select></div>
+  <div class="border"> 
+    <p>атрибут <span class="span-green"> multiple </span>можно выбрать несколько цветов с зажатием ctrl</p> <pre>
+    <span class="bg"><i><</i><i>select</i> name="color">
+          <i><</i><i>option value="red"></i><i></i> красный <i><</i><i>/option></i>
+          <i><</i><i>option value="blue"></i><i></i> синий <i><</i><i>/option></i>
+          <i><</i><i>option value="black"></i><i></i> черный <i><</i><i>/option></i>
+          <i><</i><i>option value="white"></i><i></i> белый <i><</i><i>/option></i>
+    <i><</i><i>/select></i></span>
+          </pre>
+  <select name="color" multiple>
+    <!--select multiple name="color". атрибут multiple можно выбрать несколько цветов с зажатием ctrl-->
+    <option value="red">красный</option>
+    <option value="blue">синий</option>
+    <option  value="black">черный</option>
+    <!--атрибут seleccted по умолчанию будет выбран-->
+    <option value="white">белый</option>
+  </select></div>
+</div>
+</div>
+<br><br>
+<div class="general">
+    <h2>Пример 7: Кнопка</h2>
+    <div class="border">
+      <p>Тег <span class="span-blue">input</span> аттрибут <span class="span-green">type</span> равно <span class="span-red">submit</span></p>
+      <pre>
+ <span class="bg"><i><</i><i>input type="button"></i></pre>
+ 
+      <input type="submit">
+      <br><br>
+      <span class="bg"><i><</i><i>input type="button" value="Кнопка"></i></span> 
+      <p><span class="span-green">value</span> что будет написано на кнопке</p>  
+      <input type="submit" value="Кнопка">
+    </div>
+    
+    <div class="border"><p>
+      Тег <span class="span-blue">button</span> аттрибут <span class="span-green">type</span> равно <span class="span-red">submit</span> 
+      <br>
+      <span class="bg"><i><</i><i>button type="submit">Отправить<</i><i>/button></i>
+    </p>
+    <button type="submit">Отправить</button>
+    <p>
+      Тег <span class="span-blue">button</span> аттрибут <span class="span-green">type</span> равно <span class="span-red">reset</span> 
+      <br>
+      <span class="bg"><i><</i><i>button type="reset">Обновить<</i><i>/button></i>
+    </p>
+    <button type="reset">Обновить</button></div>
+  </div>
+<br><br>
+
+
+  <div class="general">
+    <h2>Тег <span class="span-blue">label</span> (Связываем label и input) - нажми на имя пользователя</h2> 
+    <div class="border">
+      <p>без тега label</p>
+      <p><span class="bg"><i><</i><i>p> Имя пользователя: <</i><i>input type="text"><</i><i>/p></i></p>
+      <p> Имя пользователя: <input type="text"></p>
+    </div>
+    <div class="border"> 
+      <p><span class="bg"><i><</i><i>label for="user-name">Имя пользователя: <</i><i>/label></i></p>
+        <p><span class="bg"><i><</i><i>input id="user-name" type="text"></i></p>
+      <label for="user-name">Имя пользователя: </label>
+      <input id="user-name" type="text">
+      <br><br>
+      <p>Первый способ - с помощью for и id</p>
+    </div>
+    
+
+    <div class="border"> 
+      <pre><span class="bg"><i><</i><i>label> Имя пользователя:
+           <</i><i>input type="text"></i> 
+<</i><i>/label></i></pre>
+      <label>Имя пользователя:
+        <input type="text">
+      </label>
+      <br><br>
+      <p>Вложенный способ</p>
+    </div>
+    <br><br><hr color="black"><br><br><br><div class="border">
+    <h2>Лучший язык для програмирования</h2>
+    <p><label><input type="radio" name="lang"> C#</label> </p>
+    <p><label><input type="radio" name="lang"> Java</label> </p>
+    <p><label><input type="radio" name="lang"> JS</label></p>
+    <p><label><input type="radio" name="lang"> C++</label></p>
+  </div>
+  <div class="border">
+    <br><br>
+    <span class="bg"><i><</i><i>p><</i>label><<i>input type="radio" name="lang"> C#< </i>/label><i><</i>/p></span> <br>
+    <span><i><</i><i>p><</i>label><<i>input type="radio" name="lang"> Java< </i>/label><i><</i>/p></span><br>
+    <span class="bg"><i><</i><i>p><</i>label><<i>input type="radio" name="lang"> JS< </i>/label><i><</i>/p></span><br>
+    <span><i><</i><i>p><</i>label><<i>input type="radio" name="lang"> C++< </i>/label><i><</i>/p></span>
+  </div>
+  </div>
+  <br><br>
+  <div class="general">
+    <br>
+    <h2>Тег <span class="span-blue">fieldset</span> (для группировки элементов, который связаны по смыслы)</h2>
+    <h3>с помощью тега <span class="span-blue">legend</span> мы даем название группе элементов </h3>
+
+    <fieldset>
+      <legend>
+        Анкета пользователя
+      </legend>
+    </fieldset>
+    <br>
+    <pre>
+      <i><</i>fieldset>
+          <i><</i>legend>Анкета пользователя <i><</i>/legend>
+      <i><</i>/fieldset<i>></i>
+    </pre>
+<br><br><br>
+<fieldset>
+  <legend>
+    Данные пользователя
+  </legend>
+  <input type="text" placeholder="введите имя"> 
+  <input type="text" placeholder="введите фамилию">
+</fieldset>
+<br>
+<pre>
+  <i><</i>fieldset>
+      <i><</i>legend>Данные пользователя <i><</i>/legend>
+      <i><</i>input type="text" placeholder="введите имя">
+      <i><</i>input type="text" placeholder="введите фамилию">
+  <i><</i>/fieldset<i>></i>
+</pre>
+  </div>
+
+  </body>
+</html>

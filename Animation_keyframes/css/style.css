@@ -1,0 +1,445 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*--------------------*/
+.xz {
+  display: block;
+  padding-left: 180px;
+}
+.red {
+  padding-left: 100px;
+}
+
+span .comment {
+  display: inline;
+}
+
+body {
+  background-color: grey;
+  padding: 20px;
+}
+.wrapper > * {
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: 600;
+}
+.color-bc {
+  font-size: 18px;
+  font-weight: 600;
+  background-color: green;
+  margin-bottom: 2px;
+  display: inline-block;
+}
+.color-bc1 {
+  font-size: 18px;
+  font-weight: 600;
+  background-color: rgb(11, 0, 128);
+  margin-bottom: 2px;
+  display: inline-block;
+  color: wheat;
+}
+/*------------------------------------------------------------*/
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 2px solid red;
+  padding-top: 5px;
+}
+
+.content__circle {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  animation-name: white-circle;
+}
+
+@keyframes white-circle {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 1100px;
+  }
+}
+/*------------------------------------------------------------*/
+.content__circle2 {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  animation-name: white-circle;
+  animation-duration: 1s;
+}
+
+.content__circle3 {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  animation-name: white-circle;
+  animation-duration: 5s;
+}
+/*------------------------------------------------------------*/
+.content__circle4 {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  animation-name: white-circle;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+}
+
+.content__circle5 {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  animation-name: white-circle;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+/*------------------------------------------------------------*/
+.color-bc2 {
+  font-size: 18px;
+  font-weight: 600;
+  background-color: brown;
+  margin-bottom: 2px;
+  display: inline-block;
+}
+.content__circle6 {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  animation-name: white-circle;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+.content__circle7 {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  animation-name: white-circle;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 3;
+}
+.content__circle8 {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  animation-name: white-circle;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/*------------------------------------------------------------*/
+.color-bc3 {
+  font-size: 18px;
+  font-weight: 600;
+  background-color: yellow;
+  margin-bottom: 2px;
+  display: inline-block;
+}
+.content__circle9 {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  animation-name: white-circle;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+.content__circle10 {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  animation-name: white-circle;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+.content__circle11 {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  animation-name: white-circle;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+
+
+/*------------------------------------------------------------*/
+.color-bc4 {
+  font-size: 18px;
+  font-weight: 600;
+  background-color: white;
+  margin-bottom: 2px;
+  display: inline-block;
+}
+.content__circle12 {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  animation-name: white-circle;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+.content__circle13 {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  animation-name: white-circle;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.content__circle13:hover{
+  animation-play-state:paused;
+}
+
+.content__circle14 {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  animation-name: white-circle;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.content:hover .content__circle14{
+  animation-name: none;
+}
+.what{
+  display: inline-block;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+}
+
+/*------------------------------------------------------------*/
+.color-bc5 {
+  font-size: 18px;
+  font-weight: 600;
+  background-color: orange;
+  margin-bottom: 2px;
+  display: inline-block;
+}
+.content__circle15 {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  animation-name: white-circle;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+  animation-delay: 0;
+}
+.content__circle16 {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  animation-name: white-circle;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+  animation-delay: 5s;
+}
+.content__circle17 {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  animation-name: white-circle;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+  animation-delay: -1.5s;
+}
+
+/*------------------------------------------------------------*/
+.color-bc6 {
+  font-size: 18px;
+  font-weight: 600;
+  background-color: pink;
+  margin-bottom: 2px;
+  display: inline-block;
+}
+.content__circle18 {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  animation-name: white-circle;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-play-state: running;
+  animation-delay: 0;
+  animation-fill-mode: none;
+}
+.content__circle19 {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  animation-name: white-circle;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-play-state: running;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+}

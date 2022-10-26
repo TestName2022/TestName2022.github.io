@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>animation + @keyframes </title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <p class="text">
+        Мы записываем @keyframes имя {<span class="xz"
+          >здесь записывае ключевые кадры { <br />
+          <span class="red">
+            здесь записываем параметры <br />
+            <span class="red"> </span>}
+          </span>
+          <br />
+          }
+        </span>
+      </p>
+      <img src="img/2.jpg" alt="" />
+      <span class="comment"
+        >Мы создали круг (content__circle) и в нем пишем свойство animation-name
+        и даем ему имя такое же как и в @keyframe - мы их связали. (↓ вот что у
+        нас получилось) <br />
+      </span>
+      <img src="img/1.jpg" alt="" />
+      <span class="comment">
+        Внутри ключевых кадров мы пишем начальные параметры и конечные
+        параметры. Мы хотим чтобы во время анимации - кружок сдвинулся влево на
+        1100px
+      </span>
+      <div class="name">
+        animation-name: white-circle; <br />
+
+        <div class="content">
+          <div class="content__circle"></div>
+        </div>
+      </div>
+      <div class="name">
+        <p>
+          animation-name: white-circle; <br />
+          <span class="color-bc"> animation-duration: 1s;</span> (с какой
+          скоростю круг сдвинется на 110px. Мы видим, что после достижения
+          цеели, круг телепортируется на исходное место)
+        </p>
+        <div class="content">
+          <div class="content__circle2"></div>
+        </div>
+      </div>
+      <div class="name">
+        <p>
+          animation-name: white-circle; <br />
+          <span class="color-bc"> animation-duration: 5s;</span> медленее
+        </p>
+        <div class="content">
+          <div class="content__circle3"></div>
+        </div>
+      </div>
+      <div class="name">
+        <p>
+          animation-name: white-circle; <br />
+          <span class="color-bc"> animation-duration: 3s; </span> <br />
+          <span class="color-bc1"> animation-timing-function: ease;</span> (по
+          умолчанию). В каком стиле будет переход .Переход начинается медленно,
+          разгоняется быстро и замедляется в конце. (преход закончит за 3s)
+        </p>
+        <div class="content">
+          <div class="content__circle4"></div>
+        </div>
+      </div>
+      <div class="name">
+        <p>
+          animation-name: white-circle; <br />
+          <span class="color-bc"> animation-duration: 3s; </span> <br />
+          <span class="color-bc1">animation-timing-function: linear;</span>
+          Переход происходит равномерно на протяжении всего времени, без
+          колебаний в скорости. (преход закончит за 3s)
+        </p>
+        <div class="content">
+          <div class="content__circle5"></div>
+        </div>
+      </div>
+      <div class="name">
+        <p>
+          animation-name: white-circle; <br />
+          <span class="color-bc"> animation-duration: 3s; </span> <br />
+          <span class="color-bc1">animation-timing-function: linear;</span>
+          <br />
+          <span class="color-bc2">animation-iteration-count: 1;</span> (по
+          умолчанию) Сколько раз наша анимация будет повторятся. Наша анимация
+          проиграется 1 раз
+        </p>
+        <div class="content">
+          <div class="content__circle6"></div>
+        </div>
+      </div>
+      <div class="name">
+        <p>
+          animation-name: white-circle; <br />
+          <span class="color-bc"> animation-duration: 3s; </span> <br />
+          <span class="color-bc1">animation-timing-function: linear;</span
+          ><br />
+          <span class="color-bc2">animation-iteration-count: 3;</span> Наша
+          анимация проиграется 3 раз подряд
+        </p>
+        <div class="content">
+          <div class="content__circle7"></div>
+        </div>
+      </div>
+      <div class="name">
+        <p>
+          animation-name: white-circle; <br />
+          <span class="color-bc"> animation-duration: 3s; </span> <br />
+          <span class="color-bc1">animation-timing-function: linear;</span
+          ><br />
+          <span class="color-bc2">animation-iteration-count: infinite;</span>
+          Наша анимация проиграется бесконечно
+        </p>
+        <div class="content">
+          <div class="content__circle8"></div>
+        </div>
+      </div>
+
+      <div class="name">
+        <p>
+          animation-name: white-circle; <br />
+          <span class="color-bc"> animation-duration: 3s; </span> <br />
+          <span class="color-bc1">animation-timing-function: linear;</span
+          ><br />
+          <span class="color-bc2">animation-iteration-count: infinite;</span>
+          <br />
+          <span class="color-bc3">animation-direction: normal;</span> (по
+          умолчанию) Наши кадры проигрываются так как мы их записали. с лева на
+          право
+        </p>
+        <div class="content">
+          <div class="content__circle9"></div>
+        </div>
+      </div>
+      <div class="name">
+        <p>
+          animation-name: white-circle; <br />
+          <span class="color-bc"> animation-duration: 3s; </span> <br />
+          <span class="color-bc1">animation-timing-function: linear;</span
+          ><br />
+          <span class="color-bc2">animation-iteration-count: infinite;</span>
+          <br />
+          <span class="color-bc3">animation-direction: reverse;</span> Будет
+          проигываться с права на лево (наоборот, с конца в начало)
+        </p>
+        <div class="content">
+          <div class="content__circle10"></div>
+        </div>
+      </div>
+      <div class="name">
+        <p>
+          animation-name: white-circle; <br />
+          <span class="color-bc"> animation-duration: 3s; </span> <br />
+          <span class="color-bc1">animation-timing-function: linear;</span
+          ><br />
+          <span class="color-bc2">animation-iteration-count: infinite;</span>
+          <br />
+          <span class="color-bc3">animation-direction: alternate;</span> Будет
+          проигываться и обратно (не будет телепортироваться - <span style="font-weight: 900; font-size: 24px;">пинг понг</span>)
+        </p>
+        <div class="content">
+          <div class="content__circle11"></div>
+        </div>
+      </div>
+
+      <div class="name">
+        <p>
+          animation-name: white-circle; <br />
+          <span class="color-bc"> animation-duration: 3s; </span> <br />
+          <span class="color-bc1">animation-timing-function: linear;</span
+          ><br />
+          <span class="color-bc2">animation-iteration-count: infinite;</span>
+          <br />
+          <span class="color-bc3">animation-direction: alternate;</span> <br />
+          <span class="color-bc4">animation-play-state: running;</span> (по
+          умолчанию)
+        </p>
+        <div class="content">
+          <div class="content__circle12"></div>
+        </div>
+      </div>
+      <div class="name">
+        <p>
+          animation-name: white-circle; <br />
+          <span class="color-bc"> animation-duration: 3s; </span> <br />
+          <span class="color-bc1">animation-timing-function: linear;</span
+          ><br />
+          <span class="color-bc2">animation-iteration-count: infinite;</span>
+          <br />
+          <span class="color-bc3">animation-direction: alternate;</span> <br />
+          <br />
+          .content__circle:hover{ <br />
+          <br />
+          <span class="color-bc4"> animation-play-state: paused; </span> <br />
+          <br />
+          } мы создали еще один селектор и при наведении (:hover) курсором мыши
+          на обект - мы ставим на паузу его движение, убрали курсор - анимация
+          продолжается (приостонавливает анимацию)
+        </p>
+        <div class="content">
+          <div class="content__circle13"></div>
+        </div>
+      </div>
+      <div class="name">
+        <p>
+          animation-name: white-circle; <br />
+          <span class="color-bc"> animation-duration: 3s; </span> <br />
+          <span class="color-bc1">animation-timing-function: linear;</span
+          ><br />
+          <span class="color-bc2">animation-iteration-count: infinite;</span>
+          <br />
+          <span class="color-bc3">animation-direction: alternate;</span>
+          <br /><br />
+          <span class="what">
+            .content:hover .content__circle { (мы пишим селектор .content:hover
+            (означает при наведении на этот блок), потом мы обращаемся к
+            кружочку и меняем свойство )<br />
+            <br />
+            animation-name: none; <br />
+            <br />
+            } ЧТОБЫ СБРОСТИТЬ НА СТАРТОВУЮ ПОЗИЦИЮ НУЖНО ИСПОЛЬЗОВАТЬ -
+            animation-name: none; (При наведении курсором на блок (content (где
+            движеться наш круг))
+          </span>
+        </p>
+        <div class="content">
+          <div class="content__circle14"></div>
+        </div>
+      </div>
+
+      <div class="name">
+        <p>
+          animation-name: white-circle; <br />
+          <span class="color-bc"> animation-duration: 3s; </span> <br />
+          <span class="color-bc1">animation-timing-function: linear;</span
+          ><br />
+          <span class="color-bc2">animation-iteration-count: infinite;</span>
+          <br />
+          <span class="color-bc3">animation-direction: alternate;</span> <br />
+          <span class="color-bc5">animation-delay: 0;</span> (по умолчанию)
+          Задержка перед началом, 0s нет задержки
+        </p>
+        <div class="content">
+          <div class="content__circle15"></div>
+        </div>
+      </div>
+      <div class="name">
+        <p>
+          animation-name: white-circle; <br />
+          <span class="color-bc"> animation-duration: 3s; </span> <br />
+          <span class="color-bc1">animation-timing-function: linear;</span
+          ><br />
+          <span class="color-bc2">animation-iteration-count: infinite;</span>
+          <br />
+          <span class="color-bc3">animation-direction: alternate;</span> <br />
+          <span class="color-bc5">animation-delay: 5s;</span> Ждем 5s
+        </p>
+        <div class="content">
+          <div class="content__circle16"></div>
+        </div>
+      </div>
+      <div class="name">
+        <p>
+          animation-name: white-circle; <br />
+          <span class="color-bc"> animation-duration: 3s; </span> <br />
+          <span class="color-bc1">animation-timing-function: linear;</span
+          ><br />
+          <span class="color-bc2">animation-iteration-count: infinite;</span>
+          <br />
+          <span class="color-bc3">animation-direction: alternate;</span> <br />
+          <span class="color-bc5">animation-delay: -1.5s;</span> Можно писать и
+          отрицательные числа. тогда будет без задержки, но сразу начнет с
+          полпути и потом обычно как и всегда
+        </p>
+        <div class="content">
+          <div class="content__circle17"></div>
+        </div>
+      </div>
+
+      <div class="name">
+        <p>
+          animation-name: white-circle; <br />
+          <span class="color-bc"> animation-duration: 3s; </span> <br />
+          <span class="color-bc1">animation-timing-function: linear;</span
+          ><br />
+          <span class="color-bc2">animation-iteration-count: 1;</span>
+          <br />
+          <span class="color-bc3">animation-direction: alternate;</span> <br />
+          <span class="color-bc5">animation-delay: 0;</span> <br />
+          <span class="color-bc6">animation-fill-mode: none;</span> (По
+          умолчанию) Определяет какие значения анимируемых css свойств
+          применятся к объекту после завершения анимации. Не применятеся, просто телепортируется обратно
+        </p>
+        <div class="content">
+          <div class="content__circle18"></div>
+        </div>
+      </div>
+      <div class="name">
+        <p>
+          animation-name: white-circle; <br />
+          <span class="color-bc"> animation-duration: 3s; </span> <br />
+          <span class="color-bc1">animation-timing-function: linear;</span
+          ><br />
+          <span class="color-bc2">animation-iteration-count: 1;</span>
+          <br />
+          <span class="color-bc3">animation-direction: alternate;</span> <br />
+          <span class="color-bc5">animation-delay: 0;</span> <br />
+          <span class="color-bc6">animation-fill-mode: forwards;</span>
+          (Определяет какие значения анимируемых css свойств применятся к
+          объекту после завершения анимации.) после завершения стоит left: 1100px;. типа останется там
+        </p>
+        <div class="content">
+          <div class="content__circle19"></div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br />
+    <p style="font-size: 24px; text-align: center; font-weight: 900;">Универсальное! <br>
+    (Пример с последним примером)</p>
+    <p>
+      animation: animation-name <span class="color-bc">animation-duration</span>  <span class="color-bc1">animation-timing-function</span> <span class="color-bc2">animation-iteration-count </span> 
+      <span class="color-bc3">animation-direction</span> <span class="color-bc5">animation-delay</span>
+       <span class="color-bc6">animation-fill-mode</span> <span style="font-weight: 900; font-size: 24px;">;</span>
+    </p>
+    <p>animation:white-circle <span class="color-bc"> 3s </span> 
+      <span class="color-bc1"> linear</span
+      >
+      <span class="color-bc2"> 1</span>
+      
+      <span class="color-bc3">alternate</span> 
+      <span class="color-bc5"> 0</span> 
+      <span class="color-bc6"> forward</span><span style="font-weight: 900; font-size: 24px;">;</span></p>
+    
+    <br /><br /><br /><br /><br />
+  </body>
+</html>

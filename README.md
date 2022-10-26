@@ -45,6 +45,10 @@
 
 [transition-timing-function](https://TestName2022.github.io/sixteenth3Project/ "transition-timing-function") - по другому кнопка создана и езда кнопки
 
+#### animation + @keyframes
+
+[animation](https://TestName2022.github.io/Animation_keyframes/ "animation") - animation (+ @keyframes) 
+
 
 ## background
 

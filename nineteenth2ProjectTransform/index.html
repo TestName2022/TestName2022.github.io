@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>transform3D</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="content__wrapper3d">
+        <div class="content__perspective">perspective, perspective-origin</div>
+      </div>
+      <div class="container_test">
+        <div class="test"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="text">
+        .content__wrapper3d { <br />
+        width: 150px;<br />
+        height: 150px;<br />
+        background-color: black;<br />
+        perspective: 400px;<br />
+        }<br />
+        <span class="comment">
+          Мы создаем блок (content__wrapper3d) в нем создаем второй блок
+          (content__perspective). Родительскому блоку даем черный цвет и
+          параметр perspective: 400px; (Этот параметр можно и не дававать
+          родительскому блоку, пример справа →)
+        </span>
+        <br />
+        <br />
+        .content__perspective {<br />
+        color: white;<br />
+        background-color: #0080ff;<br />
+        transition: all 0.8s linear 0s;<br />
+        width: 150px;<br />
+        height: 150px;<br />
+        }<br />
+        <br />
+        .content__perspective:hover {<br />
+        transform: rotateX(50deg);<br />
+        }<br />
+      </div>
+      <div class="text">
+        .container_test{<br />
+        width: 150px;<br />
+        height: 150px;<br />
+        background-color: black;<br />
+        }<br />
+        <span class="comment"> Здесь тоже создали два вложеных блока </span>
+
+        <br /><br />
+        .test{ <br />
+        background-color: #0080ff;<br />
+        transition: all 0.8s linear 0s;<br />
+        width: 150px;<br />
+        height: 150px;<br />
+        }<br /><br />
+        .test:hover{<br />
+        transform: perspective(400px) rotateX(50deg);<br />
+        }<br />
+        <span class="comment">
+          Здесь при наведении(:hover) объект будет изменятся. СМОТРИ внимательно
+          куда мы записали параметр <br />
+          erspective: 400px <br />и как он записан!!! <br />
+          <br />
+          в общем нет разницы куда писать erspective: 400px
+        </span>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="colorContainer">
+      <h2>translate3d (x, y, z)</h2>
+      <div class="translate3d">
+        <div class="box__translate3d">
+          <div class="back">
+            <div class="element element__translate3d">translate3d</div>
+          </div>
+          <div class="back">
+            <div class="element element__translate2d">translate2d</div>
+          </div>
+        </div>
+      </div>
+      <div class="comment3d">
+        <p>
+          .translate3d:hover { <br />
+          transform: perspective(300px) translate3d(20px, 50px, 50px); <br />
+          }
+        </p>
+        <p>
+          .translate2d:hover { <br />
+          transform: translate(20px, 50px); <br />
+          }
+        </p>
+      </div>
+    </div>
+
+    <br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <div class="colorContainer">
+      <h2>scale3d (x, y, z)</h2>
+      <div class="scale3d">
+        <div class="box__scale3d">
+          <div class="back">
+            <div class="element element__scale3d">scale3d</div>
+          </div>
+          <div class="back">
+            <div class="element element__scale2d">scale2d</div>
+          </div>
+        </div>
+      </div>
+      <div class="comment3d">
+        <p>
+          .scale3d:hover { <br />
+          transform: perspective(300px) scale3d(2, 2, 5); <br />
+          }
+        </p>
+        <p>
+          .scale2d:hover { <br />
+          transform: scale(2, 2);<br />
+          }
+        </p>
+      </div>
+    </div>
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br />
+    <div class="colorContainer">
+      <h2>rotate3d (x, y, z, deg)</h2>
+      <div class="rotate3d">
+        <div class="box__rotate3d">
+          <div class="back">
+            <div class="element element__rotate3d">rotate3d</div>
+          </div>
+          <div class="back">
+            <div class="element element__rotate2d">rotate2d</div>
+          </div>
+        </div>
+      </div>
+      <div class="comment3d">
+        <p>
+          .scale3d:hover { <br />
+          transform: perspective(400px) rotate3d(1, 1, 1, 50deg); <br />
+          }
+        </p>
+        <p>
+          .scale2d:hover { <br />
+          transform: rotate(50deg);<br />
+          }
+        </p>
+      </div>
+    </div>
+    <br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <div class="colorContainer">
+      <h2>Комбинация</h2>
+      <div class="combination">
+        <div class="box__combination">
+          <div class="back">
+            <div class="element combination3d">combination</div>
+          </div>
+          <div class="back">
+            <div class="element combination2d">combination</div>
+          </div>
+        </div>
+      </div>
+      <div class="comment3d">
+        <p>
+          .scale3d:hover { <br />
+          transform: perspective(400px) translate3d(20px, 50px, 100px)
+          rotate3d(1, 1, 1, 50deg); <br />
+          }
+        </p>
+        <p>
+          .scale2d:hover { <br />
+          transform: translate(20px, 100px) rotate(50deg);<br />
+          }
+        </p>
+      </div>
+    </div>
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <div class="colorContainer">
+      <h2>transform-style</h2>
+      <div class="transform-style">
+        <div class="box__transform-style">
+          <div class="back backl1">
+            <div class="element transform-style3d">combination</div>
+          </div>
+          <div class="back backl">
+            <div class="element transform-style3_d">combination</div>
+          </div>
+        </div>
+      </div>
+      <div class="comment3d">
+        <p>
+          Родительскому блоку даем параметр<br />
+          transform-style: flat; (по умолчанию) <br />
+          <br />
+          .container3D {<br />
+          transform-style: flat;<br />
+          }<br /><br />
+          .box3d:hover {<br />
+          transform: perspective(400px) rotate3d(1, 1, 1, 50deg);<br />
+          }<br />
+          Ничего не поменялось, но запомни что свойстов <br />
+          transform-style - только родительскому даем
+        </p>
+        <p>
+          Родительскому блоку даем параметр<br />
+          transform-style: preserve-3d; <br />
+          <br />
+          .container3D {<br />
+          transform-style: preserve-3d;<br />
+          }<br /><br />
+          .box3d:hover {<br />
+          transform: perspective(400px) rotate3d(1, 1, 1, 50deg);<br />
+          }<br />
+          Мы видим что объект проходит сквозь своего родителя
+        </p>
+      </div>
+    </div>
+    <br /><br />
+    <br /><br />
+    <div class="colorContainer">
+      <h2>Backface-visibility</h2>
+
+
+<div class="row3">
+
+      <div class="flip__body">
+        <div class="flip__front">FONT</div>
+        <div class="flip__back">BACK</div>
+      </div>
+
+
+      <div class="img img1">
+        <img src="img/1.jpg" alt="">
+      </div>
+      <div class="img img2">
+        <img src="img/2.jpg" alt="">
+      </div>
+
+
+
+</div>
+
+
+    </div>
+    <br /><br /><br />
+   
+  </body>
+</html>

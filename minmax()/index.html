@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Grid. minmax( )</title>
+  </head>
+  <body>
+    <div class="gridContainer">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+    </div>
+    <br /><br /><br />
+    <div class="flex">
+      <div class="first">
+        <p>HTML</p>
+        <img src="img/1.jpg" alt="" />
+      </div>
+      <div class="second">
+        <p>CSS</p>
+        <img src="img/2.jpg" alt="" />
+      </div>
+      <div class="third">
+        Делаем первую колонку отзывчивой, <br />
+        чтобы размер колонки менялся от 100рх до 500рх <br />
+        исползуем функцию minmax(100px, 500px) <br />
+        передаем два аргумента: <br />
+        минимальный размер колонки и максимальный. <br />
+        Теперь от размера окна браузера - наша колонка <br />
+        будет изменять размер колонки от 100рх до 500рх
+      </div>
+    </div>
+
+    <br /><br />
+    <div class="gridContainer exemple">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis cum,
+        illum asperiores 
+      </div>
+      <div>7</div>
+      <div>8</div>
+      <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis cum,
+        illum asperiores </div>
+        <div>10</div>
+        <div>11</div>
+    </div>
+    <br /><br /><br />
+    <div class="flex">
+      <div class="first">
+        <p>HTML</p>
+        <img src="img/1.jpg" alt="" />
+      </div>
+      <div class="second">
+        <p>CSS</p>
+        <img src="img/2.1.jpg" alt="" />
+      </div>
+      <div class="third">
+       Второму и третьему ряду делаем отзывчивой <br>
+       во втором ряде исползуем функцию minmax(100px, 200px) <br>
+       в третьему ряду исползуем minmax(100px, auto); <br>
+       
+       6 ячейка растянулась на максимальную высоту - <br> и этого не достаточно <br>
+       9 ячейка - мы не фиксировали максимальную высоту. <br>
+       Остальные ячейки в третьему ряду,<br> автомотически принимают размер
+      </div>
+    </div>
+  </body>
+</html>

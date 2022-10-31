@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>video Атрибуты</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="row">
+        <div class="original">
+          <video class="original__video video" src="video/forest.mp4"></video>
+        </div>
+        <img src="img/css.jpg" alt="" />
+        <p>в сss мы указали 300рх ширину плеера, чтобы он стал по меньше.</p>
+      </div>
+      <div class="rt">
+        <div class="row">
+          <div class="firs">
+            <video
+              controls
+              src="video/forest.mp4"
+              class="first__video video"
+            ></video>
+          </div>
+
+          <div class="second">
+            <video
+              controls
+              poster="img/forest-poster.jpg"
+              src="video/forest.mp4"
+              class="second__video video"
+            ></video>
+          </div>
+
+          <div class="third">
+            <video
+              controls
+              muted
+              autoplay
+              src="video/forest.mp4"
+              class="second__video video"
+            ></video>
+          </div>
+
+          <div class="fourth">
+            <video
+              controls
+              muted
+              autoplay
+              loop
+              src="video/forest.mp4"
+              class="second__video video"
+            ></video>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <p>
+            <img src="img/1.jpg" alt="" />
+          </p>
+          <p>
+            <img src="img/2.jpg" alt="" />
+          </p>
+          <p>
+            <img src="img/3.jpg" alt="" />
+          </p>
+          <p>
+            <img src="img/4.jpg" alt="" />
+          </p>
+        </div>
+        <div class="row">
+          <p>
+            Атрибут controls - добавляет панель управления <br />
+            в оригинале нету панеля управления <br />
+            и мы не можем включить и управлять видео
+          </p>
+          <p>
+            Атрибут poster - добавляем картинку <br />
+            для перед возпроизведением, наше видео <br />
+            начинается с черного экрана и чтобы было красиво <br />
+            мы добавим картинку
+          </p>
+          <p>
+            Атрибут autoplay - как страница загрузилась <br />
+            видео автоматически будет воспроизведена <br />
+            НО в нужно отключить звук в видео <br />
+            Атрибут muted - отключает звук, звук можно <br />
+            включить в панеле управления
+          </p>
+          <p>Атрибут loop - бесконечное повторение ролика</p>
+        </div>
+      </div>
+      <br /><br /><br /><br />
+      <div class="tt">
+        <div class="row">
+          <div class="firs">
+            <video
+              controls
+              preload="auto"
+              src="video/forest.mp4"
+              class="first__video video"
+            ></video>
+          </div>
+
+          <div class="second">
+            <video
+              controls
+              preload="metadata"
+              src="video/forest.mp4"
+              class="second__video video"
+            ></video>
+          </div>
+
+          <div class="third">
+            <video
+              controls
+              preload="none"
+              src="video/forest.mp4"
+              class="second__video video"
+            ></video>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <p>
+            <img src="img/1 — копия.jpg" alt="" />
+          </p>
+          <p>
+            <img src="img/2 — копия.jpg" alt="" />
+          </p>
+          <p>
+            <img src="img/3 — копия.jpg" alt="" />
+          </p>
+        </div>
+        <br />
+        <div class="row">
+          <p>
+            Атрибут preload со значение "auto" <br />
+            видео автоматически подгрузиться
+          </p>
+          <p>
+            Атрибут preload со значение "metadata"<br />видео не подгрузиться,
+            но подгрузиться данные <br />
+            (сколько минут длится видео)
+          </p>
+          <p>Атрибут preload со значение "none" <br />ничего не подгрузиться, <br> в момент нажатие на воспроизвести <br> - начнется загрузка видео </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

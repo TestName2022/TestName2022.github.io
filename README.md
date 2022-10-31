@@ -31,11 +31,19 @@
 
 [for column](https://TestName2022.github.io/flex-direction-column;/ "column") - flex-direction: column; align-items(→)  / justify-content(↓)
 
+[gap](https://TestName2022.github.io/flex/ "gap") - column-gap | row-gap (отступы)
+
 #### для элемента
 
 [align-self/order](https://TestName2022.github.io/align-self_order/ "align-self/order") - align-self / order
 
 [flex](https://TestName2022.github.io/flex-shrinkForRow/ "flex") - flex-basis (размер) / flex-grow (заполнение контейнера - по ум. 0 - нельзя заполнять) / flex-shrink (изменение размера - по ум. 1 - можно изменять)
+
+## grid
+
+#### для контейнера
+
+#### для элемента
 
 ## Анимация
 

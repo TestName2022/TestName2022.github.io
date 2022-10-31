@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>grid-auto-flow: dense;</title>
+  </head>
+  <body>
+   
+    <br>
+    <div>
+      <pre>.gridContainer {
+        display: grid;
+        grid-template-columns: 200px 500px 200px;
+        grid-template-rows: 100px 100px 50px;
+        grid-column-gap: 20px;
+        grid-row-gap: 50px;
+        <span style="color: blue; font-size: 20px;">grid-auto-flow: row;</span>
+      }<br>
+.gridContainer > :nth-child(1){
+        grid-column: 2 / 4;
+      } <br>
+.gridContainer > :nth-child(5){
+        grid-column: 2 / 3;
+      }</pre>
+      <p style="font-weight: 900;">мы видим что пустые места есть</p>
+      <div class="gridContainer">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+      </div>
+      <br><br><br>
+      
+    </div>
+    <hr color="black" size="5">
+    <br>
+    <div>
+      <pre>.gridContainer {
+        display: grid;
+        grid-template-columns: 200px 500px 200px;
+        grid-template-rows: 100px 100px 50px;
+        grid-column-gap: 20px;
+        grid-row-gap: 50px;
+        <span style="color: blue; font-size: 20px;">grid-auto-flow: dense;</span> (grid-auto-flow: row dense; - но row не пишут)
+      } <br>
+.gridContainer > :nth-child(1){
+  grid-column: 2 / 4;
+      }<br>
+.gridContainer > :nth-child(5){
+  grid-column: 2 / 3;
+      }</pre>
+      <p style="font-weight: 900;">мы видим что пустые места автоматически заполнились</p>
+      <div class="gridContainer column">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+      </div>
+      <br><br><br>
+      
+    </div>
+    <br>
+    <hr color="red" size="5">
+    <br>
+    <div>
+      <pre>.gridContainer {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 100px 100px;
+        grid-column-gap: 20px;
+        grid-row-gap: 50px;
+        <span style="color: blue; font-size: 20px;">grid-auto-flow: column;</span>
+      }<br>
+.gridContainer > :nth-child(1){
+         grid-row: 2 / 3;
+      } <br>
+.gridContainer > :nth-child(5){
+         grid-row: 1 / 3;
+      }</pre>
+      <p style="font-weight: 900;">мы видим что пустые места есть</p>
+      <div class="gridContainer2 column2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+      </div>
+      <br><br><br>
+      
+    </div>
+    <hr color="black" size="5">
+    <br>
+    <div>
+      <pre>.gridContainer {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 100px 100px;
+        grid-column-gap: 20px;
+        grid-row-gap: 50px;
+        <span style="color: blue; font-size: 20px;">grid-auto-flow: column dense;</span>
+      }<br>
+.gridContainer > :nth-child(1){
+         grid-row: 2 / 3;
+      } <br>
+.gridContainer > :nth-child(5){
+         grid-row: 1 / 3;
+      }</pre>
+      <p style="font-weight: 900;">мы видим что пустые места автоматически заполнились</p>
+      <div class="gridContainer2 column3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+      </div>
+      <br><br><br>
+      
+    </div>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*--------------------*/
+body{
+    padding: 20px;
+	background-color: grey;
+}
+.gridContainer {
+  border: 1px solid red;
+}
+
+.gridContainer > * {
+  background-color: blueviolet;
+  border: 1px solid black;
+  font-size: 30px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.third{
+    line-height: 20px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+/*-----------------------------------------------------------------*/
+
+.gridContainer {
+	background-color:white;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 100px 100px 100px;
+  grid-column-gap: 20px;
+  grid-row-gap: 50px;
+  grid-auto-flow: row;
+}
+
+.gridContainer > :nth-child(1){
+  grid-column: 2 / 4;
+}
+.gridContainer > :nth-child(5){
+  grid-column: 2 / 3;
+}
+
+/*-----------------------------------------------------------------*/
+
+.column{
+  grid-auto-flow: dense;
+}
+/*-----------------------------------------------------------------*/
+.gridContainer2 {
+  border: 1px solid red;
+}
+
+.gridContainer2 > * {
+  background-color: blueviolet;
+  border: 1px solid black;
+  font-size: 30px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.gridContainer2 {
+	background-color:white;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 100px 100px;
+  grid-column-gap: 20px;
+  grid-row-gap: 50px;
+  grid-auto-flow: column;
+}
+
+.gridContainer2 > :nth-child(1){
+  grid-row: 2 / 3;
+}
+.gridContainer2 > :nth-child(5){
+  grid-row: 1 / 3;
+}
+
+
+
+
+.column3{
+  grid-auto-flow: column dense;
+}

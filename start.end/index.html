@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Grid. grid-column-start/end. grid-row-start/end</title>
+  </head>
+  <body>
+    <div class="row">
+      <div>
+        <img src="img/Безымянный.jpg" alt="" />
+      </div>
+      <div class="comment">
+        grid-column-start/end - это зеленые линии <br />
+        grid-row-start/end - это красные линии <br />
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+
+    <div class="gridContainer">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+    </div>
+    <br /><br /><br />
+    <div class="flex">
+      <div class="first">
+        <p>HTML</p>
+        <img src="img/1.jpg" alt="" />
+      </div>
+      <div class="second">
+        <p>CSS</p>
+        <img src="img/2.jpg" alt="" />
+      </div>
+      <div class="third">
+        Мы создали три колонки с фиксированными размерами (200рх)
+        <br /><br /><br /><br />
+        Первому элементу мы сказали, чтобы он начинался <br />
+        с первой линии (колонки) и закончился 4 линией, <br />
+        мы видим что элемент растянулся - ВЛЕВО <br />
+        Строк стало больше!!! <br /><br /><br />
+        Второму элементу мы говорим, чтобы он начинался <br />
+        со второй линии (строка) и закончился 6 линией, <br />
+        мы видим что элемент растянулся - ВНИЗ <br /><br />
+        дальше сам думай <br> <br>
+        краткая запись (последний пример): <br> grid-row: 4/6; grid-column: 3/4; <br>
+        grid-area: 4 / 3 / 6 / 4;
+      </div>
+    </div>
+    <br><br><br><br><br>
+    <div class="gridContainer2 ">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+    </div>
+    <p>мы задали </p>
+    <pre>
+      .gridContainer > div:nth-child(1) {
+               grid-column: 2 / 4;
+      }
+    </pre>
+    <p>и наблюдаем, что осталось свободное место возле 1</p>
+    <br><br>
+    <div class="gridContainer3 ">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+    </div>
+    <p>мы задали </p>
+    <pre>
+      .gridContainer > div:nth-child(1) {
+               grid-column: 2 / 4;
+               grid-row: 1;
+      }
+    </pre>
+    <p>и наблюдаем, что свободного место нет, 2 заняло пустое место <br>
+    тк мы задали конретно всё</p>
+    <br><br>
+  </body>
+</html>

@@ -43,7 +43,33 @@
 
 #### для контейнера
 
+[grid-template | grid-gap](https://TestName2022.github.io/grid-template.grid-gap/ "grid-template") - grid-template-rows; grid-template-columns; | grid-gap;
+
+[grid-auto-flow: column](https://TestName2022.github.io/grid-auto-flow(column)/ "grid-auto-flow") - grid-auto-flow: column;
+
+[grid-auto-flow: dense](https://TestName2022.github.io/grid-auto-flow(dense)/ "grid-auto-flow") - grid-auto-flow: dense; - для австозаполнение пустых ячеек
+
+[grid-row | grid-column](https://TestName2022.github.io/start.end/ "grid-row/-column") - grid-column-start/end; grid-row-start/end;
+
+[grid-auto-rows | grid-auto-columns](https://TestName2022.github.io/grid-auto(-rows.-columns)/ "grid-auto-rows/-columns") - не явные строки и колонки
+
+[justify-content | align-content](https://TestName2022.github.io/justify-content.align-content/ "content") - justify-content(→) / align-content (↓) - в РОДИТЕЛЬСОКМ контейнере
+
+[justify-items | align-items](https://TestName2022.github.io/justify-items.align-items/ "items") - justify-items(→) / align-items (↓) - в "элементской" ячейке
+
+[fr](https://TestName2022.github.io/fr/ "fr") - fr
+
+[repeat()](https://TestName2022.github.io/repeat()/ "repeat") - repeat()
+
+[minmax()](https://TestName2022.github.io/minmax()/ "minmax") - minmax()
+
+[auto-fill | auto-fit](https://TestName2022.github.io/auto-fill.auto-fit/ "auto") - auto-fill | auto-fit (для адаптивности)
+
 #### для элемента
+
+[justify-self | align-self](https://TestName2022.github.io/justify-self.align-self/ "items") - justify-self(→) / align-self (↓) - индивидуально каждый элемент (в "элементской" ячейке)
+
+[grid-template-areas](https://TestName2022.github.io/grid-tampale-areas/ "areas") - grid-template-areas (для сетки header , main, footer)
 
 ## Анимация
 

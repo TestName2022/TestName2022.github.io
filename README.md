@@ -12,6 +12,8 @@
 
 [VIDEO](https://TestName2022.github.io/twentyfirstPracticeVIDEO/ "VIDEO") -  аттрибуты
 
+[iframe](https://TestName2022.github.io/twentyfirst3PracticeVIDEO/ "VIDEO") - вставка видео с другого ресурса (YouTube)
+
 # CSS
 
 [styleForText](https://TestName2022.github.io/styleForText/ "styleForText") - Стили для текста и шрифта

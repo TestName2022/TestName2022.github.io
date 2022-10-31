@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>justify-content / align-content</title>
+  </head>
+  <body>
+
+    <a href="https://youtu.be/vExgsxs9r-M?t=1716">VIDEO</a> <br><br><br><br><br>
+    <p> <span style="font-weight: 900; color:blue; font-size: 20px; ">оригинал</span>
+    </p>
+    <pre>.gridContainer {
+      display: grid;
+      grid-template-columns: 200px 200px 200px;
+      grid-template-rows: minmax(100px, auto);
+      grid-gap: 50px 20px;
+    }</pre>
+    <div class="gridContainer">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+    </div>
+    <br /><br /><br />
+   <hr size="5" color="black">
+   <span style="font-weight: 900; color:blue; font-size: 24px;">justify-content ( start | end | center | space-between | space-around)</span>
+   <br><br>
+    <div class="gridContainer first">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+    </div>
+    <pre>.gridContainer {
+      display: grid;
+      grid-template-columns: 200px 200px 200px;
+      grid-template-rows: minmax(100px, auto);
+      grid-gap: 50px 20px;
+      <span style="font-weight: 900; color:blue ">justify-content: space-between;</span> (justify-content: start; - по умолчанию)
+    }
+    </pre>
+    <br><br> <div class="gridContainer second">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+    </div>
+    <pre>.gridContainer {
+      display: grid;
+      grid-template-columns: 200px 200px 200px;
+      grid-template-rows: minmax(100px, auto);
+      grid-gap: 50px 20px;
+      <span style="font-weight: 900; color:blue ">justify-content: center;</span>
+    }
+    </pre>
+    <hr size="5" color="black">
+    <span style="font-weight: 900; color:blue; font-size: 24px;">align-content (stretch | start | end | center | space-between | space-around)</span>
+    <br><br>
+    <div class="gridContainer third">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+    </div>
+    <pre>.gridContainer {
+      height: 800px;
+      display: grid;
+      grid-template-columns: 200px 200px 200px;
+      grid-template-rows: minmax(100px, auto);
+      grid-gap: 50px 20px;
+      <span style="font-weight: 900; color:blue ">align-content: center;</span> (align-content: stretch; - по умолчанию)
+    }
+    </pre>
+    <br><br>
+    <div class="gridContainer fourth">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+    </div>
+    <pre>.gridContainer {
+      height: 800px;
+      display: grid;
+      grid-template-columns: 200px 200px 200px;
+      grid-template-rows: minmax(100px, auto);
+      grid-gap: 50px 20px;
+      <span style="font-weight: 900; color:blue ">align-content: start;</span> 
+    }
+    </pre>
+  </body>
+</html>

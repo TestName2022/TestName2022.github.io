@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Grid. fr</title>
+  </head>
+  <body>
+    <div class="gridContainer">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+    </div>
+    <br /><br /><br />
+    <div class="flex">
+      <div class="first">
+        <p>HTML</p>
+        <img src="img/1.jpg" alt="" />
+      </div>
+      <div class="second">
+        <p>CSS</p>
+        <img src="img/2.jpg" alt="" />
+      </div>
+      <div class="third">
+        .обращаемся к селектору {<br />
+        определяем его - display: grid; <br />
+        мы создаем колонки (3шт и даем размер в fr) <br />
+        определяем ряды (3шт и даем размер высоты ряда) <br />
+        отступы между колонками (по 20рх) <br />
+        отступы между рядами (по 50 рх) <br />
+        }
+        <br />
+        Мы видим, что контейнер полностью заполнился,<br />
+        fr - это единица измерения в grid <br />
+        Мы поделили весь контейрен на три равные колонки, <br />
+        они будут адаптироваться <br />
+        (могли написать 33,333% 33,333% 33,333%)
+      </div>
+    </div>
+
+    <br /><br /><br />
+    <div class="gridContainer exemple1">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+    </div>
+    <br />
+    <div class="flex">
+      <div class="first">
+        <p>HTML</p>
+        <img src="img/1.jpg" alt="" />
+      </div>
+      <div class="second">
+        <p>CSS</p>
+        <img src="img/2 .1.jpg" alt="" />
+      </div>
+      <div class="third">
+        .обращаемся к селектору {<br />
+        определяем его - display: grid; <br />
+        мы создаем колонки (3шт и даем размер ширины в fr) <br />
+        определяем ряды (3шт и даем размер высоты ряда) <br />
+        отступы между колонками (по 20рх) <br />
+        отступы между рядами (по 50 рх) <br />
+        } <br />Первой колонке мы дали 2fr - это означает, что <br />
+        половину контейнера мы заполняем первой колонкой, <br />
+        а остающееся место разномерно заполняют <br />остальные колонки. <br />
+        <br />
+        У нас в общем 4fr - 2fr получает первая колонка <br /> и по 1fr получают 2 и 3 колонка <br>
+        (grid-template-columns: 50% 25% 25%;)
+      </div>
+    </div>
+  </body>
+</html>

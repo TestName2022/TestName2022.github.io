@@ -10,6 +10,8 @@
 
 [form](https://TestName2022.github.io/form/ "form") -  input; select; button; label; fieldset;
 
+[VIDEO](https://TestName2022.github.io/twentyfirstPracticeVIDEO/ "VIDEO") -  аттрибуты
+
 # CSS
 
 [styleForText](https://TestName2022.github.io/styleForText/ "styleForText") - Стили для текста и шрифта
